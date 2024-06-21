@@ -17,11 +17,7 @@ const sidebars: SidebarsConfig = {
   // But you can create a sidebar manually
   
   tutorialSidebar: [
-    {
-      type: 'category',
-      label: 'Dashboard',
-      items: ['Dashboard/Company-Overview', 'Dashboard/Booking', 'Dashboard/Tour', 'Dashboard/Transfer', 'Dashboard/Expense', 'Dashboard/Check-In', 'Dashboard/Vehicle', 'Dashboard/Guide', 'Dashboard/KPI'],
-    },
+    'Home',
     { // ขีดเส้นใต้
       type: 'html',
           value: '<hr style="border-color: black; margin: 8px 0;">',
@@ -30,64 +26,26 @@ const sidebars: SidebarsConfig = {
       type: 'html',
       value: '<span style="opacity: 0.6; font-size: 14px; color:#FD5C04;">Management</span>'
     },
-'Booking',
     {
       type: 'category',
-      label: 'Tour',
-      items: ['Tour/Manage-Group','Tour/Job-Order'],
+      label: 'Product',
+      items: ['Product/Product','Product/Availability','Product/SpecialOffer'],
     }
     ,
     {
       type: 'category',
-      label: 'Transfer',
-      items: ['Transfer/Manage-Transfer', 'Transfer/Transfer-Order'],
+      label: 'Bookings',
+      items: ['Bookings/Bookings', 'Bookings/TicketScanner'],
     }
     ,
     {
       type: 'category',
-      label: 'Check In',
-      items: ['Check In/Check-In', 'Check In/Check-In-List'],
+      label: 'Performance',
+      items: ['Performance/Reviews', 'Performance/Analytics'],
     }
     ,
-    {
-      type: 'category',
-      label: 'Expense',
-      items: ['Expense/Advance', 'Expense/Actual', 'Expense/Accrued'],
-    }
-    ,
-'Vehicle-Task'
-    ,
-'Guide-Task'
-    ,
-    { // ขีดเส้นใต้
-      type: 'html',
-          value: '<hr style="border-color: black; margin: 8px 0;">',
-    }, 
-    {
-      type: 'html',
-      value: '<span style="opacity: 0.6; font-size: 14px; color:#FD5C04;">Setting</span>'
-    },
-    {
-      type: 'category',
-      label: 'Program',
-      items: ['Program/Program-list','Program/Items-Type','Program/Unit']
-    },
-'Agent' ,
-    {
-      type: 'category',
-      label: 'Vehicle',
-      items: ['Vehicle/Supplier','Vehicle/Own-vehicle', 'Vehicle/Group-Type'],
-    }
-    ,
-'Guide-List' ,
-'Zone-Transfer' ,
-    {
-      type:'category',
-      label: 'User',
-      items: ['User/User-List','User/Roles','User/Access-Log']
-    }
+'Finance'
   ],
-   
 };
 
 export default sidebars;
