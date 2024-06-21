@@ -13,7 +13,7 @@ let config: Config = {
   url: 'https://ttd-global.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/TourMaster-Manual/',
+  baseUrl: '/TM-Manual/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -74,7 +74,7 @@ let config: Config = {
       logo: {
         alt: 'Tour Master',
         src: 'img/TourMaster-Logo.png',
-        href: '/TourMaster-Manual/content/Dashboard/Company-Overview'
+        href: '/TM-Manual/content/Home'
       },
       hideOnScroll: true,
       items: [
