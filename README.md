@@ -1,7 +1,8 @@
 # Website
 
 **Please Use This Link for User Manual**
-Defualt Url This link https://ttd-global.github.io/TourMaster-Manual/content/Dashboard/
+Defualt Url This link https://ttd-global.github.io/TM-Manual/Home
+
 
 
 
