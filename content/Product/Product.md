@@ -6,7 +6,6 @@ title: Product
 มีส่วนสำคัญๆดังนี้
 - **Create new product** ใช้ในการสร้าง Product
 - **Filter** ใช้ในการช่วยค้นหา Product
-- **Product** รายละเอียด Product
 - **Action** ไว้ใช้ในการจัดการ Product
 
 ---
@@ -102,7 +101,77 @@ title: Product
                 - *Different place* ส่งจุดอื่น โดยระบุจุดจัดส่งได้สูงสุด 2 ที่
                 - *No drop-off* ไม่มีบริการจัดส่ง
             - *Transportation* เลือกยานพาหนะที่ใช้สำหรับการรับ-ส่งลูกค้า
-    - **Itinerary** ระบุเวลา Start Trip , Time และ End Trip โดยสามารถระบุ Detail ได้ว่าช่วงเวลานั้นทำอะไร
-    - **Inclusions**
-    - **Availability & pricing**
-    - **Other info**
+    - **Itinerary** ระบุเวลา Start Trip , Time และ End Trip โดยสามารถระบุ Detail ได้ว่าช่วงเวลาดังกล่าวทำอะไร
+        - *Start Trip*  เวลาเริ่มของกิจกรรม
+        - *Time* ช่วงเวลาในการทำกิจกรรม
+        - *Add time* เพิ่มเวลาในการทำกิจกรรม
+        - *End Trip* เวลาในการจบกิจกรรม
+    - **Inclusions** ระบุรายละเอียดของสิ่งที่จะรวมอยู่ในราคาและสิ่งที่จะไม่รวมอยู่ในราคาของ Option (กรอกหรือไม่กรอกก็ได้)
+        - *What is included?* สิ่งที่จะรวมอยู่ในราคาของ Option สามารถเพิ่มสิ่งที่จะรวมได้โดยการกด _Add included_
+        - *What is not included?* สิ่งที่จะไม่รวมอยู่ในราคาของ Option สามารถเพิ่มสิ่งที่จะไม่รวมได้โดยการกด _Add not included_
+    - **Availability & pricing** ไว้ตั้งค่าเวลาพร้อมใช้งานและการตั้งราคา สามารถเพิ่มโดยการ _Add new schedule_ มีขั้นตอนทั้งหมด 4 ขั้นตอนในการสร้างดังนี้
+        - *Schedule* ตารางเวลา
+            - *Name schedule* ชื่อของตารางเวลา
+            - *Starting date of your activity* ระบุวันที่เริ่มต้นของกิจกรรม พร้อมตัวเลือก _My activity has an end date_ หากเลือก จะแสดงช่องระบุวันที่สิ้นสุดของกิจกรรมได้
+            - *Standard weekly schedule* ตารางเวลาทั่วไปของรายสัปดาห์ มีสองตัวเลือกดังนี้
+            - *Fixed time slots* ช่วงเวลาที่กำหนดตายตัว โดยกด _Add time slot_ เพื่อใช้ในการเพิ่มเวลาที่ต้องการ
+                - *Add time slot* เพิ่มเวลาที่กำหนดตายตัวของแต่ละวันในรายสัปดาห์ โดยสามารถกด ลบ เพื่อลบทีละอันหรือ Clear เพื่อล้างข้อมูลของวันที่ที่กำหนดได้
+            - *Operating hours* ช่วงเวลาชั่วโมงทำการ โดยกด _Add time slot_ เพื่อใช้ในการเพิ่มเวลาที่ต้องการ
+                - *Add time slot* เพิ่มเวลา เปิด-ปิด ของแต่ละวันในรายสัปดาห์ โดยสามารถกด ลบ เพื่อลบทีละอันหรือ Clear เพื่อล้างข้อมูลของวันที่ที่กำหนดได้
+        - *Pricing Categorries* สำหรับการกำหนดหน่วยของราคา
+            - *Unit* สามารถเลือกหน่วยได้ โดยหากสร้าง Product ใหม่จะต้องทำการ _Create new unit_ ก่อน 
+                - *Set an age range* สามารถกำหนดช่วงอายุได้ว่า หน่วยนี้กำหนดอายุถึงเท่าไหร่
+            - *Add Unit Group* สามารถเพิ่มกลุ่มหน่วยได้
+        - *Capacity* สำหรับกำหนดความจุหรือขีดจำกัดจำนวนผู้เข้าร่วม โดยกำหนดสองช่องคือ
+            - *Min # of participants* สำหรับระบุจำนวนผู้เข้าร่วมขั้นต่ำ
+            - *Max # of participants* สำหรับระบุจำนวนผู้เข้าร่วมสูงสุด
+        - *Price* สำหรับการตั้งราคาในระบบของ Schedule นี้ โดยจะแสดง Unit ที่ตั้งไว้
+            - *Price per participant* Capacity ที่ระบุไว้ว่าจำนวนต่ำสุด-สูงสุดที่เข้าร่วม
+            - *Customer pays*  ตั้งราคาต่อคน
+    - **(หากสร้างเสร็จแล้วระบบจะแสดงหน้าจอดังนี้ สามารถ Copy เพื่อลดระยะเวลาการสร้างได้ หากการสร้างไม่สมบูรณ์หรือไม่ครบถ้วน ระบบจะแสดงสถานะ Draft ไม่แสดงสู่สาธารณะ)**
+    - **Other info** กำหนดแบบฟอร์มการจองให้ลูกค้ากรอก  
+        - *Contact info* บังคับเลือก เนื่องจากเป็นข้อมูลที่จำเป็นในการจอง
+        - *Other required info* Other required info จะไม่ได้บังคับเลือก หากเลือก Custimized other info ระบบจะแสดง Add other info details ให้กรอก Title และ hint ของ Title (เป็นการ Guideline) 
+    - **(หลังจากกด Save and Finish ระบบจะเข้าสู่หน้า View Product ทันที)**
+        
+---
+
+## **Filter** 
+ใช้ในการช่วยค้นหา Product จะแบ่งเป็น 3 ส่วนหลักๆดังนี้
+    - **Search Product** ไว้ใช้ในการกรอกค้นหาชื่อ Product
+    - **Filter by status** มี Status ดังนี้
+        - *All product* แสดง Product ที่มีทั้งหมด
+        - *Publish* แสดง Product ที่มี Status : Publish ทั้งหมด
+        - *Unpublish* แสดง Product ที่มี Status : Unpublish ทั้งหมด
+        - *Draft* แสดง Product ที่มี Status : Draft ทั้งหมด
+    - **Filter type** แสดงตาม Type ของ Product
+        - *Most popular* แสดง Product ที่มีการเลือกไว้ให้อยู่ในหมวดหมู่ Most popular หากยังไม่มีแสดงให้เลือก _Add product_ เพื่อเพิ่ม product ที่ต้องการได้สามารถเลื่อนปรับตำแหน่งที่ต้องการได้ สูงสุด 8 product
+
+---
+
+## **Action** 
+ไว้ใช้ในการจัดการ Product มี 2 ส่วนดังนี้
+    - *View* แสดงข้อมูล Product Detail ดังนี้
+        - *Manage Product* การจัดการ Product
+            - *Public - Unpublish* เผยแพร่-ไม่เผยแพร่ สู่สาธารณะ
+            - *Delete Product* ลบ Product
+            - *View reviews* แสดงหน้า Review
+            - *View on website* แสดงหน้า Website
+        - *Product* แสดง Status, Title, Discription
+            - *Status* จะแสดงสถานะ 3 สถานะ ดังนี้
+                - *Publish* ผลิตภัณฑ์หรือเนื้อหาที่กำลังใช้งานหรือเผยแพร่อยู่
+                - *Unpublish* การหยุดใช้งานหรือยกเลิกการเผยแพร่ผลิตภัณฑ์หรือเนื้อหา
+                - *Draft* ผลิตภัณฑ์หรือเนื้อหาที่ยังไม่เผยแพร่และอยู่ในสถานะร่าง
+            - *Action* สามารถทำการแก้ไขข้อมูล หรือแสดง Website เพื่อตรวจสอบการแสดง Website ได้
+        - *Option* แสดงข้อมูลดังนี้
+            - *Create new option* ไว้ใช้ในการสร้าง Option เพิ่มเติม
+            - *Status* จะแสดงสถานะ 3 สถานะ ดังนี้
+                - *Active* ผลิตภัณฑ์หรือเนื้อหาที่กำลังใช้งานหรือเผยแพร่อยู่
+                - *Deactivate* การหยุดใช้งานหรือยกเลิกการเผยแพร่ผลิตภัณฑ์หรือเนื้อหา
+                - *Draft* ผลิตภัณฑ์หรือเนื้อหาที่ยังไม่เผยแพร่และอยู่ในสถานะร่าง
+            - *Action* สามารถทำการแก้ไข, Logs, Deactivate, Delete เพื่อจัดการ Option
+                - *Edit* สามารถทำการแก้ไข Option ได้
+                - *Logs* บันทึกกิจกรรมที่เกี่ยวข้องกับตัวเลือก Option นี้
+                - *Active-Deactivate* เปิด-ปิด การใช้งาน Option นี้
+                - *Delete* ลบตัวเลือกออก
+    - *View on website* ใช้แสดงหน้าเว็ปไซต์
