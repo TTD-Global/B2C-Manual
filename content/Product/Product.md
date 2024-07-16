@@ -7,7 +7,7 @@ title: Product
 - **Create new product** ใช้ในการสร้าง Product
 - **Filter** ใช้ในการช่วยค้นหา Product
 - **Action** ไว้ใช้ในการจัดการ Product
-
+![](/img/Product-list.png)
 ---
 ## **Create new product**
 โดยจะแบ่งออกเป็น 9 ขั้นตอน
