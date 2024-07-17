@@ -27,7 +27,7 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="Product category" label="Product category" default>
 
-***Product category*** ไว้กำหนด Categorize จัดหมวดหมู่ของ Product (แสดงหน้า Home) โดยแต่ละหัวข้อจะแสดง Dropdown เพื่อกำหนดหรือระบุ Categorize
+***Product category*** ไว้กำหนด Categorise จัดหมวดหมู่ของ Product (แสดงหน้า Home) โดยแต่ละหัวข้อจะแสดง Dropdown เพื่อกำหนดหรือระบุ Categorise
 
 ![](/img/Product-create-category.png)
 
@@ -36,7 +36,7 @@ import TabItem from '@theme/TabItem';
 <TabItem value="Title" label="Title">
 
 - ***Title*** ไว้กำหนด Title ของ Product ตั้งชื่อในการแสดงใน Website (แนะนำให้กรอก จังหวัด : ตามด้วยชื่อที่ต้องการ)
-    - **Reference code** ให้กรอกเป็นข้อความ ไว้เพื่อใช้ในการค้นหาได้ง่ายขึ้น (กรอกหรือไม่กรอกก็ได้)
+    - **Reference code** กรอกข้อความ ไว้เพื่อใช้ในการค้นหาได้ง่ายขึ้น (กรอกหรือไม่กรอกก็ได้)
 
 ![](/img/Product-create-title.png)
 
@@ -248,8 +248,15 @@ import TabItem from '@theme/TabItem';
 ## **Filter** 
 ใช้ในการช่วยค้นหา Product จะแบ่งเป็น 3 ส่วนหลักๆดังนี้
 
+<Tabs>
+<TabItem value="Search Product" label="Search Product" default>
+
     - **Search Product** ไว้ใช้ในการกรอกค้นหาชื่อ Title ของ Product
     ![](/img/Product-filter-search.png)
+
+</TabItem>
+<TabItem value="Filter by status" label="Filter by status">
+
     - **Filter by status** มี Status ดังนี้
         - *All product* แสดง Status ของ Product ที่มีทั้งหมด
         ![](/img/Product-filter-search.png)
@@ -259,12 +266,18 @@ import TabItem from '@theme/TabItem';
         ![](/img/Product-filter-status-unpublish.png)
         - *Draft* แสดง Product ที่มี Status : Draft ทั้งหมด
         ![](/img/Product-filter-status-draft.png)
+
+</TabItem>
+<TabItem value="Filter type" label="Filter type">
+
     - **Filter type** แสดงตาม Type ของ Product
         - *Most popular* แสดง Product ที่มีการเลือกไว้ให้อยู่ในหมวดหมู่ Most popular หากยังไม่มีแสดงให้เลือก _Add product_ เพื่อเพิ่ม product ที่ต้องการได้สามารถเลื่อนปรับตำแหน่งที่ต้องการได้ 8 product (โดยหากเกิน 8 product จะแสดง see more เพิ่มเติม)
         ![](/img/Product-filter-most-popular.png)
         ![](/img/Product-filter-most-popular-add.png)
         ![](/img/Product-filter-most-popular-show.png)
+</TabItem>
 
+</Tabs>
 </TabItem>
 
 <TabItem value="Action">
@@ -272,14 +285,25 @@ import TabItem from '@theme/TabItem';
 ## **Action** 
 ไว้ใช้ในการจัดการ Product มี 2 ส่วนดังนี้
 ![](/img/Product-action.png)
+
+<Tabs>
+<TabItem value="View" label="View" default>
+
     - **View** แสดงข้อมูล Product Detail ดังนี้
     ![](/img/Product-detail.png)
+
+<Tabs>
+<TabItem value="Manage Product" label="Manage Product" default>
+
         - ***Manage Product*** การจัดการ Product
             - *Public - Unpublish* เผยแพร่-ไม่เผยแพร่ สู่สาธารณะ
             ![](/img/Product-manage-product.png)
             - *Delete Product* ลบ Product
             {/* - *View reviews* แสดงหน้า Review */}
             - *View on website* แสดงหน้า Website
+</TabItem>
+<TabItem value="Product" label="Product">
+
         - ***Product*** แสดง Status, Title, Discription
             - *Status* จะแสดงสถานะ 3 สถานะ ดังนี้
                 - *Publish* ผลิตภัณฑ์หรือเนื้อหาที่กำลังใช้งานหรือเผยแพร่อยู่
@@ -288,6 +312,9 @@ import TabItem from '@theme/TabItem';
                 ![](/img/Product-detail-status.png)
             - *Action* สามารถทำการแก้ไขข้อมูล หรือแสดง Website เพื่อตรวจสอบการแสดง Website ได้
             ![](/img/Product-detail-product-action.png)
+</TabItem>
+<TabItem value="Option" label="Option">
+
         - ***Option*** แสดงข้อมูลดังนี้
             - *Create new option* ไว้ใช้ในการสร้าง Option เพิ่มเติม
             - *Status* จะแสดงสถานะ 3 สถานะ ดังนี้
@@ -301,7 +328,16 @@ import TabItem from '@theme/TabItem';
                 - *Active-Deactivate* เปิด-ปิด การใช้งาน Option นี้
                 - *Delete* ลบตัวเลือกออก
                 ![](/img/Product-detail-option-action.png)
+</TabItem>
+</Tabs>
+</TabItem>
+
+<TabItem value="View on website" label="View on website">
+
     - **View on website** ใช้แสดงหน้าเว็ปไซต์
 
-    </TabItem>
-    </Tabs>
+</TabItem>
+</Tabs>
+
+</TabItem>
+</Tabs>
