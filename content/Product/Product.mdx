@@ -2,6 +2,10 @@
 title: Product
 ---
 
+import TOCInline from '@theme/TOCInline';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 ## **Product list** 
 มีส่วนสำคัญๆดังนี้
 - **Create new product** ใช้ในการสร้าง Product
@@ -10,21 +14,34 @@ title: Product
 
 ![](/img/Product-menu.png)
 ![](/img/Product-list.png)
+
 ---
+
+<Tabs className="unique-tabs">
+
+<TabItem value="Create a new product">
+
 ## **Create new product**
 โดยจะแบ่งออกเป็น 9 ขั้นตอนดังนี้
-- ***Product categoty*** ไว้กำหนด Categorize จัดหมวดหมู่ของ Product (แสดงหน้า Home) โดยแต่ละหัวข้อจะแสดง Dropdown เพื่อกำหนดหรือระบุ Categorize
+
+<Tabs>
+<TabItem value="Product category" label="Product category" default>
+
+***Product category*** ไว้กำหนด Categorize จัดหมวดหมู่ของ Product (แสดงหน้า Home) โดยแต่ละหัวข้อจะแสดง Dropdown เพื่อกำหนดหรือระบุ Categorize
 
 ![](/img/Product-create-category.png)
 
----
+</TabItem>
+
+<TabItem value="Title" label="Title">
 
 - ***Title*** ไว้กำหนด Title ของ Product ตั้งชื่อในการแสดงใน Website (แนะนำให้กรอก จังหวัด : ตามด้วยชื่อที่ต้องการ)
     - **Reference code** ให้กรอกเป็นข้อความ ไว้เพื่อใช้ในการค้นหาได้ง่ายขึ้น (กรอกหรือไม่กรอกก็ได้)
 
 ![](/img/Product-create-title.png)
 
----
+</TabItem>
+<TabItem value="Descriptions & highlight" label="Descriptions & highlight">
 
 - ***Descriptions & highlight*** แสดงข้อมูลเกี่ยวกับ Product 
     - *Introduce your product* ระบุข้อความเพื่อบ่งบอกเกี่ยวกับ Product เบื้องต้นว่ามีอะไรบ้าง
@@ -33,7 +50,8 @@ title: Product
 
 ![](/img/Product-create-descrip.png)
 
----
+</TabItem>
+<TabItem value="Locations" label="Locations">
 
 - ***Locations*** กำหนดจังหวัดและสถานที่ของ Product
     - *Country* กำหนดจังหวัดของ Product
@@ -41,7 +59,8 @@ title: Product
 
 ![](/img/Product-create-location.png)
 
----
+</TabItem>
+<TabItem value="Keywords" label="Keywords">
 
 - ***Keywords*** กำหนดคำที่มีความหมายสื่อถึง Product เพื่อค้นหาได้ง่ายขึ้น (ระบุหรือไม่ระบุก็ได้)
 
@@ -50,13 +69,15 @@ title: Product
     - *Advanced keyword* จะแสดงหมวดหมู่และลิสต์ของ Keyword สามารถระบุได้สูงสุด 15 คำ
 ![](/img/Product-create-advance-keywords.png)
 
----
+</TabItem>
+<TabItem value="Guide information" label="Guide information">
 
 - ***Guide information*** กำหนดข้อมูลเกี่ยวกับบุคคลที่เกี่ยวข้องกับ Product โดยสามารถเลือกได้ 1 อย่าง เช่น Product เกี่ยวกับท่องเที่ยว จะเลือก Tour Guide เป็นไกด์สำหรับท่องเที่ยว เป็นต้น
 
 ![](/img/Product-create-guide.png)
 
----
+</TabItem>
+<TabItem value="Extra information" label="Extra information">
 
 - ***Extra information*** กำหนดข้อมูลเพิ่มเติมเกี่ยวกับ Product (กรอกหรือไม่กรอกก็ได้)
     - *Not suitable for* ไว้ระบุว่า Product นี้ไม่เหมาะสมกับใคร เช่น เด็กอายุต่ำกว่า 18 ปี เป็นต้น
@@ -70,7 +91,8 @@ title: Product
     - *Know before activity* ระบุเพื่อบ่งบอกก่อนที่จะเริ่ม Product (ข้อความจะส่งให้ใน Email หลังจากทำการจองเรียบร้อย)
     ![](/img/Product-create-extra.png)
 
----
+</TabItem>
+<TabItem value="Photo" label="Photo">
 
 - ***Photo*** กำหนดรูปภาพที่จะแสดงในหน้า Website โดยรูปแรกจะเป็นรูปที่แสดงใหญ่สุดและเป็นรูปแสดงใน Card 
     - **ข้อกำหนด**
@@ -84,30 +106,37 @@ title: Product
     _(ในการอัปโหลดรูปภาพ คุณต้องติ๊กยอมรับว่าคุณเป็นเจ้าของลิขสิทธิ์และมีแบบฟอร์มอนุญาตสำหรับบุคคลในรูปภาพที่สามารถระบุได้ก่อนที่จะดำเนินการต่อ)_
     ![](/img/Product-create-photo-upload.png)
 
----
+</TabItem>
+<TabItem value="Options" label="Options">
 
-- ***Options*** ในการสร้าง Option จะมีขั้นตอน 5 ขั้นตอนดังนี้
-![](/img/Product-create-option.png)
-    - **Option setup** กำหนดข้อมูลของ Option มีรายละเอียดดังนี้
-        - *Option title* ระบุชื่อ Option
-        - *Option reference code* รหัสอ้างอิงเพื่อช่วยติดตามตัวเลือก (กรอกหรือไม่กรอกก็ได้)
-        - *Option description* ระบุรายละเอยีดเกี่ยวกับ Option ที่เลือก
-        - *Maximum group size* ระบุจำนวนสูงสุดของผู้เข้าร่วม Option นี้
+***Options*** ในการสร้าง Option จะมีขั้นตอน 5 ขั้นตอนดังนี้
+
+<Tabs>
+<TabItem value="Option setup" label="Option setup" default>
+- **Option setup** กำหนดข้อมูลของ Option มีรายละเอียดดังนี้
+    - *Option title* ระบุชื่อ Option
+    - *Option reference code* รหัสอ้างอิงเพื่อช่วยติดตามตัวเลือก (กรอกหรือไม่กรอกก็ได้)
+    - *Option description* ระบุรายละเอยีดเกี่ยวกับ Option ที่เลือก
+    - *Maximum group size* ระบุจำนวนสูงสุดของผู้เข้าร่วม Option นี้
         ![](/img/Product-create-option-setup.png)
-        - *Option setup* ระบุภาษาที่ใช้ หากมีไกด์สามารถกด Switch เพื่อเปิด และระบุเกี่ยวกับภาษาของคู่มือ หรือ Audio Guide ได้
+    - *Option setup* ระบุภาษาที่ใช้ หากมีไกด์สามารถกด Switch เพื่อเปิด และระบุเกี่ยวกับภาษาของคู่มือ หรือ Audio Guide ได้
         ![](/img/Product-create-option-setup-lang.png)
-        - *private activity?* ระบุว่า Options นี้เป็น Private หรือ Join-In
-        - *wheelchair accessible?* ระบุว่า Options นี้สามารถเข้าถึงได้ด้วยรถเข็นหรือไม่?
+    - *private activity?* ระบุว่า Options นี้เป็น Private หรือ Join-In
+    - *wheelchair accessible?* ระบุว่า Options นี้สามารถเข้าถึงได้ด้วยรถเข็นหรือไม่?
         ![](/img/Product-create-option-private-wheel.png)
-        - *Duration or validity* ระบุระยะเวลาของกิจกรรม หรือ สามารถใช้บัตรได้ในช่วงใด
+    - *Duration or validity* ระบุระยะเวลาของกิจกรรม หรือ สามารถใช้บัตรได้ในช่วงใด
         ![](/img/Product-create-option-duration.png)
         ![](/img/Product-create-option-validity.png)
-        - *Cut-off time* ระบุเวลาล่วงหน้าก่อนเริ่มกิจกรรมที่หยุดรับการจองใหม่
+    - *Cut-off time* ระบุเวลาล่วงหน้าก่อนเริ่มกิจกรรมที่หยุดรับการจองใหม่
         ![](/img/Product-create-option-cutoff.png)
-        - *Confirmation Policy* นโยบายในการยืนยัน
-        - *Cancellation Policy* นโยบายในการยกเลิก
+    - *Confirmation Policy* นโยบายในการยืนยัน
+    - *Cancellation Policy* นโยบายในการยกเลิก
         ![](/img/Product-create-option-confirm.png)
         ![](/img/Product-create-option-cancel.png)
+
+</TabItem>
+<TabItem value="Meeting point or pickup" label="Meeting point or pickup">
+
     - **Meeting point or pickup** ระบุจุดนัดพบหรือการรับส่ง
         - **Meeting point** เกี่ยวกับจุดนัดพบ
         ![](/img/Product-create-option-meeting.png)
@@ -143,16 +172,28 @@ title: Product
                 - *No drop-off* ไม่มีบริการจัดส่ง
             - **Transportation** เลือกยานพาหนะที่ใช้สำหรับการรับ-ส่งลูกค้า
             ![](/img/Product-create-option-transportation.png)
+
+</TabItem>
+<TabItem value="Itinerary" label="Itinerary">
+
     - **Itinerary** ระบุเวลา Start Trip , Time และ End Trip โดยสามารถระบุ Detail ได้ว่าช่วงเวลาดังกล่าวทำอะไร
         - *Start Trip*  เวลาเริ่มของกิจกรรม
         - *Time* ช่วงเวลาในการทำกิจกรรม
         - *Add time* เพิ่มเวลาในการทำกิจกรรม
         - *End Trip* เวลาในการจบกิจกรรม
         ![](/img/Product-create-option-itinerary.png)
+
+</TabItem>
+<TabItem value="Inclusions" label="Inclusions">
+
     - **Inclusions** ระบุรายละเอียดของสิ่งที่จะรวมอยู่ในราคาและสิ่งที่จะไม่รวมอยู่ในราคาของ Option (กรอกหรือไม่กรอกก็ได้)
         - *What is included?* สิ่งที่จะรวมอยู่ในราคาของ Option สามารถเพิ่มสิ่งที่จะรวมได้โดยการกด _Add included_
         - *What is not included?* สิ่งที่จะไม่รวมอยู่ในราคาของ Option สามารถเพิ่มสิ่งที่จะไม่รวมได้โดยการกด _Add not included_
         ![](/img/Product-create-option-inclusions.png)
+
+</TabItem>
+<TabItem value="Availability & pricing" label="Availability & pricing">
+
     - **Availability & pricing** ไว้ตั้งค่าเวลาพร้อมใช้งานและการตั้งราคา สามารถเพิ่มโดยการ _Add new schedule_ มีขั้นตอนทั้งหมด 4 ขั้นตอนในการสร้างดังนี้
     ![](/img/Product-create-option-add-schedule.png)
         - **Schedule** ตารางเวลา
@@ -174,7 +215,7 @@ title: Product
             ![](/img/Product-create-option-new-unit.png)
                 - *Set an age range* สามารถกำหนดช่วงอายุได้ว่า หน่วยนี้กำหนดอายุถึงเท่าไหร่
                 ![](/img/Product-create-option-set-age.png)
-            - *Add Unit Group* สามารถเพิ่มกลุ่มหน่วยได้
+          - *Add Unit Group* สามารถเพิ่มกลุ่มหน่วยได้
             ![](/img/Product-create-option-add-unit-group.png)
         - **Capacity** สำหรับกำหนดความจุหรือขีดจำกัดจำนวนผู้เข้าร่วม โดยกำหนดสองช่องคือ
             - *Min # of participants* สำหรับระบุจำนวนผู้เข้าร่วมขั้นต่ำ(กำหนด 1 ต่ำสุดไม่สามารถลดลงมากกว่านี้ได้)
@@ -184,18 +225,29 @@ title: Product
             - *Price per participant* Capacity ที่ระบุไว้ว่าจำนวนต่ำสุด-สูงสุดที่เข้าร่วม
             - *Customer pays*  ตั้งราคา
             ![](/img/Product-create-option-price.png)
-    <!-- - **(หากสร้างเสร็จแล้วระบบจะแสดงหน้าจอดังนี้ สามารถ Copy เพื่อลดระยะเวลาการสร้างได้ หากการสร้างไม่สมบูรณ์หรือไม่ครบถ้วน ระบบจะแสดงสถานะ Draft ไม่แสดงสู่สาธารณะ)** -->
+
+</TabItem>
+<TabItem value="Other info" label="Other info">
+
+    {/* - **(หากสร้างเสร็จแล้วระบบจะแสดงหน้าจอดังนี้ สามารถ Copy เพื่อลดระยะเวลาการสร้างได้ หากการสร้างไม่สมบูรณ์หรือไม่ครบถ้วน ระบบจะแสดงสถานะ Draft ไม่แสดงสู่สาธารณะ)** */}
     - **Other info** กำหนดแบบฟอร์มการจองให้ลูกค้ากรอก  
         - *Contact info* บังคับเลือก เนื่องจากเป็นข้อมูลที่จำเป็นในการจอง
         - *Other required info* Other required info จะไม่ได้บังคับเลือก หากเลือก Custimized other info ระบบจะแสดง Add other info details ให้กรอก Title และ hint ของ Title (เป็นการ Guideline) 
         ![](/img/Product-create-option-customized-other-info.png)
     - **(หลังจากกด Save and Finish ระบบจะเข้าสู่หน้า View Product ทันที)**
     ![](/img/Product-details.png)
+    </TabItem>
+</Tabs>
+</TabItem>
 
----
+</Tabs>
+</TabItem>
+
+<TabItem value="Filter">
 
 ## **Filter** 
 ใช้ในการช่วยค้นหา Product จะแบ่งเป็น 3 ส่วนหลักๆดังนี้
+
     - **Search Product** ไว้ใช้ในการกรอกค้นหาชื่อ Title ของ Product
     ![](/img/Product-filter-search.png)
     - **Filter by status** มี Status ดังนี้
@@ -213,7 +265,9 @@ title: Product
         ![](/img/Product-filter-most-popular-add.png)
         ![](/img/Product-filter-most-popular-show.png)
 
----
+</TabItem>
+
+<TabItem value="Action">
 
 ## **Action** 
 ไว้ใช้ในการจัดการ Product มี 2 ส่วนดังนี้
@@ -224,7 +278,7 @@ title: Product
             - *Public - Unpublish* เผยแพร่-ไม่เผยแพร่ สู่สาธารณะ
             ![](/img/Product-manage-product.png)
             - *Delete Product* ลบ Product
-            <!-- - *View reviews* แสดงหน้า Review -->
+            {/* - *View reviews* แสดงหน้า Review */}
             - *View on website* แสดงหน้า Website
         - ***Product*** แสดง Status, Title, Discription
             - *Status* จะแสดงสถานะ 3 สถานะ ดังนี้
@@ -243,8 +297,11 @@ title: Product
                 ![](/img/Product-detail-option-status.png)
             - *Action* สามารถทำการแก้ไข, Logs, Deactivate, Delete เพื่อจัดการ Option
                 - *Edit* สามารถทำการแก้ไข Option ได้
-                <!-- - *Logs* บันทึกกิจกรรมที่เกี่ยวข้องกับตัวเลือก Option นี้ -->
+                {/* - *Logs* บันทึกกิจกรรมที่เกี่ยวข้องกับตัวเลือก Option นี้ */}
                 - *Active-Deactivate* เปิด-ปิด การใช้งาน Option นี้
                 - *Delete* ลบตัวเลือกออก
                 ![](/img/Product-detail-option-action.png)
     - **View on website** ใช้แสดงหน้าเว็ปไซต์
+
+    </TabItem>
+    </Tabs>
