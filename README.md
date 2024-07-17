@@ -1,7 +1,7 @@
 # Website
 
 **Please Use This Link for User Manual**
-Defualt Url This link https://ttd-global.github.io/TM-Manual/Home
+Defualt Url This link https://ttd-global.github.io/TM-Manual/content/Home
 
 
 
