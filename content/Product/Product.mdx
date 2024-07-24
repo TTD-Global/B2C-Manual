@@ -225,6 +225,8 @@ import TabItem from '@theme/TabItem';
             - *Price per participant* Capacity ที่ระบุไว้ว่าจำนวนต่ำสุด-สูงสุดที่เข้าร่วม
             - *Customer pays*  ตั้งราคา
             ![](/img/Product-create-option-price.png)
+        - **เมื่อดำเนินการกรอกข้อมูลครบทุกขั้นตอนแล้วจะแสดงข้อมูลดังรูป**
+        ![](/img/Product-create-option-finish.png)
 
 </TabItem>
 <TabItem value="Other info" label="Other info">
@@ -232,8 +234,15 @@ import TabItem from '@theme/TabItem';
     {/* - **(หากสร้างเสร็จแล้วระบบจะแสดงหน้าจอดังนี้ สามารถ Copy เพื่อลดระยะเวลาการสร้างได้ หากการสร้างไม่สมบูรณ์หรือไม่ครบถ้วน ระบบจะแสดงสถานะ Draft ไม่แสดงสู่สาธารณะ)** */}
     - **Other info** กำหนดแบบฟอร์มการจองให้ลูกค้ากรอก  
         - *Contact info* บังคับเลือก เนื่องจากเป็นข้อมูลที่จำเป็นในการจอง
-        - *Other required info* Other required info จะไม่ได้บังคับเลือก หากเลือก Custimized other info ระบบจะแสดง Add other info details ให้กรอก Title และ hint ของ Title (เป็นการ Guideline) 
+        - *Other required info* Other required info จะไม่ได้บังคับเลือก (เมื่อกดเลือกตัวเลือกจะแสดงกล่องเพื่อกรอก hint text หรือสิ่งนี้จำเป็นต้องกรอกใช่หรือไม่ เป็นปุ่มเปิด-ปิด) 
         ![](/img/Product-create-option-customized-other-info.png)
+        - *Custimized other info* หากเลือก Custimized other info ระบบจะแสดง Customized other info ให้กรอก โดยมีให้เลือกระหว่าง Text และ Sigle selection
+
+         ![](/img/Product-create-option-customized-other-info-custom-single.png)
+         - *Text* จะมีส่วนที่ต้องกรอก 2 ส่วนด้วยกันคือ Other info title และ other info hint text ส่วนที่จำเป็นต้องกรอกคือ Other info title เพื่อแสดงหัวข้อ และ Required แสดงสิ่งนี้จำเป็นต้องกรอกใช่หรือไม่ เป็นปุ่มเปิด-ปิด
+         ![](/img/Product-create-option-customized-other-info-custom-text.png)
+         - *Single selection* จะมีส่วนที่ต้องกรอก 3 ส่วนด้วยกันคือ Other info title , Other info hint text และ Other info dropdown option (สิ่งที่ต้องเลือก 1 อย่าง) โดยสามารถกรอกและเพิ่มโดยกดปุ่ม Add ได้ 
+         ![](/img/Product-create-option-customized-other-info-custom-single-select.png)
     - **(หลังจากกด Save and Finish ระบบจะเข้าสู่หน้า View Product ทันที)**
     ![](/img/Product-details.png)
     </TabItem>
@@ -259,7 +268,7 @@ import TabItem from '@theme/TabItem';
 
     - **Filter by status** มี Status ดังนี้
         - *All product* แสดง Status ของ Product ที่มีทั้งหมด
-        ![](/img/Product-filter-search.png)
+        ![](/img/Product-filter-status.png)
         - *Publish* แสดง Product ที่มี Status : Publish ทั้งหมด
         ![](/img/Product-filter-status-publish.png)
         - *Unpublish* แสดง Product ที่มี Status : Unpublish ทั้งหมด
@@ -299,6 +308,7 @@ import TabItem from '@theme/TabItem';
             - *Public - Unpublish* เผยแพร่-ไม่เผยแพร่ สู่สาธารณะ
             ![](/img/Product-manage-product.png)
             - *Delete Product* ลบ Product
+            ![](/img/Product-manage-delete.png)
             {/* - *View reviews* แสดงหน้า Review */}
             - *View on website* แสดงหน้า Website
 </TabItem>
