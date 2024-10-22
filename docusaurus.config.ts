@@ -5,15 +5,15 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 
 let config: Config = {
-  title: 'Tour Master',
+  title: 'B2C',
   tagline: 'User Manaul',
-  favicon: 'img/LogoTM.png',
+  favicon: 'img/LogoNewOA.png',
 
   // Set the production url of your site here
   url: 'https://ttd-global.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/TM-Manual/',
+  baseUrl: '/B2C-Manual/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -67,14 +67,14 @@ let config: Config = {
     },
     // hide_table_of_contents: true,
     // Replace with your project's social card
-    image: 'img/TourMaster-Logo.png',
+    image: 'img/NewOA.png',
     colorMode: {
       disableSwitch: true,},
     navbar: {
       logo: {
         alt: 'Tour Master',
-        src: 'img/TourMaster-Logo.png',
-        href: '/TM-Manual/content/Home'
+        src: 'img/NewOA.png',
+        href: '/B2C-Manual/content/Home'
       },
       hideOnScroll: true,
       items: [
