@@ -72,7 +72,7 @@ let config: Config = {
       disableSwitch: true,},
     navbar: {
       logo: {
-        alt: 'Tour Master',
+        alt: 'OneAsia',
         src: 'img/NewOA.png',
         href: '/B2C-Manual/content/Home'
       },
