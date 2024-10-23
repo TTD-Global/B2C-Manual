@@ -5,8 +5,12 @@
  */
 
 /* You can override the default Infima variables here. */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped&display=swap');
+body {
+  font-family: 'Noto Sans Thai Looped', sans-serif;
+}
 :root {
-  --ifm-color-primary: #FF552A;
+  --ifm-color-primary: #046EE9;
   --ifm-color-primary-dark: #142B41;
   --ifm-color-primary-darker: #142B41;
   --ifm-color-primary-darkest: #142B41;
@@ -37,19 +41,33 @@
   min-width: 0;
 }
 
-h1{
-  color: #FF552A;
-}
+/* h1{
+  color: #046EE9;
+} */
 strong{
-  color:#F77339;
+  color:#101828;
 }
 em{
-  color: #FC8B3A;
+  color: #101828;
 }
 
-/* .table-of-contents__left-border {
-  display: none !important;
-} */
 .col--3{
   display: none !important;
 }
+.card:hover{
+  color: #046EE9;
+}
+/* .card:active{
+  background-color: #F77339;
+  color:#ffff;
+} */
+ .navbar{
+  background-color: #1D2939;
+ }
+ .navbar__item{
+  color:#fff; 
+ }
+ .navbar__item:hover{
+  color:#0BA5EC; 
+ }
+ 

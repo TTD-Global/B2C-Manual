@@ -1,5 +1,6 @@
 import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
+
 /**
  * Creating a sidebar enables you to:
  - create an ordered group of docs
@@ -25,14 +26,38 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Product',
-      items: ['Product/Product','Product/Availability','Product/SpecialOffer'],
+      items: [
+        {
+          type: 'category',
+          label: 'Product list',
+          link: {
+            type: 'doc',
+            id: 'Product/Product/Product_list'
+          },
+          items: [
+            {
+              type: 'category',
+              label:  'Create new Product',
+              link:{
+                type: 'doc',
+                id: 'Product/Product/Product'
+              },
+              items:[
+                  'Product/Product/Option'
+              ]
+            },
+            'Product/Product/Filter',
+            'Product/Product/Button_Action'
+          ],
+          
+        },
+        
+        'Product/Availability',
+        'Product/SpecialOffer'
+      ],
     }
     ,
-    {
-      type: 'category',
-      label: 'Bookings',
-      items: ['Bookings/Bookings', 'Bookings/TicketScanner'],
-    }
+    'Bookings'
     ,
     {
       type: 'category',

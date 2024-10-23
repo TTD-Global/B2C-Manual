@@ -1,0 +1,147 @@
+---
+title: Create Option
+hide_table_of_contents: true
+---
+import TOCInline from '@theme/TOCInline';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+การสร้าง Option มีขั้นตอน 5 ขั้นตอนดังนี้
+
+<Tabs>
+<TabItem value="Option setup" label="Option setup" default>
+- **Option setup** กำหนดข้อมูลของ Option มีรายละเอียดดังนี้
+    - *Option title* ระบุชื่อ Option
+    - *Option reference code* รหัสอ้างอิงเพื่อช่วยติดตามตัวเลือก (กรอกหรือไม่กรอกก็ได้)
+    - *Option description* ระบุรายละเอียดเกี่ยวกับ Option ที่เลือก
+    - *Maximum group size* ระบุจำนวนสูงสุดของผู้เข้าร่วม Option นี้
+        ![](/img/Product-create-option-setup.png)
+    - *Option setup* ระบุภาษาที่ใช้ หากมีไกด์สามารถกด Switch เพื่อเปิด และระบุเกี่ยวกับภาษาของคู่มือ หรือ Audio Guide ได้
+        ![](/img/Product-create-option-setup-lang.png)
+    - *private activity?* ระบุว่า Options นี้เป็น Private หรือ Join-In
+    - *wheelchair accessible?* ระบุว่า Options นี้สามารถเข้าถึงได้ด้วยรถเข็นหรือไม่?
+        ![](/img/Product-create-option-private-wheel.png)
+    - *Duration or validity* ระบุระยะเวลาของกิจกรรม หรือ สามารถใช้บัตรได้ในช่วงใด
+        ![](/img/Product-create-option-duration.png)
+        ![](/img/Product-create-option-validity.png)
+    - *Cut-off time* ระบุเวลาล่วงหน้าก่อนเริ่มกิจกรรมที่หยุดรับการจองใหม่
+        ![](/img/Product-create-option-cutoff.png)
+    - *Confirmation Policy* นโยบายในการยืนยัน
+    - *Cancellation Policy* นโยบายในการยกเลิก
+        ![](/img/Product-create-option-confirm.png)
+        ![](/img/Product-create-option-cancel.png)
+
+</TabItem>
+<TabItem value="Meeting point or pickup" label="Meeting point or pickup">
+
+    - **Meeting point or pickup** ระบุจุดนัดพบหรือการรับส่ง
+        - **Meeting point** เกี่ยวกับจุดนัดพบ
+        ![](/img/Product-create-option-meeting.png)
+            - **Add meeting point address** ระบุจุดนัดพบ โดยเลือกจากแผนที่หรือกรอกเพื่อระบุตำแหน่งได้
+            ![](/img/Product-create-option-address.png)
+            - **Describe** กรอกรายละเอียดสำหรับการนัดพบ (กรอกหรือไม่กรอกก็ได้)
+            - **When to arrive** เลือกเวลาให้ลูกค้าถึงที่นัดพบ
+            ![](/img/Product-create-option-arrive.png)
+            - **Drop-off** เลือกการจัดส่งลูกค้าจะมีให้เลือก 3 ตัวเลือก
+                - *Same place* ส่งจุดที่นัดพบ
+                - *Different place* ส่งจุดอื่น โดยระบุจุดจัดส่ง
+                - *No drop-off* ไม่มีบริการจัดส่ง
+            ![](/img/Product-create-option-dropoff.png)
+        - **Pickup service** เกี่ยวกับจุดนัดรับ
+            - **Add Pickup Address** จะมี 2 ตัวเลือก
+                - *Pickup any address* ระบุสถานที่ที่จะนัดรับโดยการกรอกที่ตั้ง
+                ![](/img/Product-create-option-pickup.png)
+                - *Pickup specific places* นัดรับที่โรงแรม หรือสนามบิน ตามที่ระบุอย่างน้อย 2 ตำแหน่ง
+                ![](/img/Product-create-option-pickup2.png)
+            - **Describe** กรอกรายละเอียดสำหรับการนัดรับ (กรอกหรือไม่กรอกก็ได้)
+            ![](/img/Product-create-option-pickup-describe.png)
+            - **When tell customer pickup** คุณจะบอกลูกค้าเมื่อไหร่เกี่ยวกับเวลาที่คุณจะไปรับ โดยจะมี 3 ตัวเลือกดังนี้
+                - *Pick them up at activity start* ไปรับเมื่อกิจกรรมเริ่มต้นขึ้น
+                - *The day before activity takes place*  หนึ่งวันก่อนที่กิจกรรมจะเกิดขึ้น และเลือกเวลาที่จะเข้ารับลูกค้า
+                ![](/img/Product-create-option-pickup-day-before.png)
+                - *Within 24 hours after they book* ภายใน 24 ชั่วโมงหลังจากที่จอง และเลือกเวลาที่จะเข้ารับลูกค้า
+                ![](/img/Product-create-option-pickup-24hr-afterbook.png)
+            - **Drop-off** เลือกการจัดส่งลูกค้าจะมีให้เลือก 3 ตัวเลือก
+                - *Same place* ส่งที่จุดนัดรับ
+                - *Different place* ส่งจุดอื่น โดยระบุจุดจัดส่งได้
+                ![](/img/Product-create-option-pickup-dropoff.png)
+                ![](/img/Product-create-option-pickup-dropoff-address.png)
+                - *No drop-off* ไม่มีบริการจัดส่ง
+            - **Transportation** เลือกยานพาหนะที่ใช้สำหรับการรับ-ส่งลูกค้า
+            ![](/img/Product-create-option-transportation.png)
+
+</TabItem>
+<TabItem value="Itinerary" label="Itinerary">
+
+    - **Itinerary** ระบุเวลา Start Trip , Time และ End Trip โดยสามารถระบุ Detail ได้ว่าช่วงเวลาดังกล่าวทำอะไร
+        - *Start Trip*  เวลาเริ่มของกิจกรรม
+        - *Time* ช่วงเวลาในการทำกิจกรรม
+        - *Add time* เพิ่มเวลาในการทำกิจกรรม
+        - *End Trip* เวลาในการจบกิจกรรม
+        ![](/img/Product-create-option-itinerary.png)
+
+</TabItem>
+<TabItem value="Inclusions" label="Inclusions">
+
+    - **Inclusions** ระบุรายละเอียดของสิ่งที่จะรวมอยู่ในราคาและสิ่งที่จะไม่รวมอยู่ในราคาของ Option (กรอกหรือไม่กรอกก็ได้)
+        - *What is included?* สิ่งที่จะรวมอยู่ในราคาของ Option สามารถเพิ่มสิ่งที่จะรวมได้โดยการกด _Add included_
+        - *What is not included?* สิ่งที่จะไม่รวมอยู่ในราคาของ Option สามารถเพิ่มสิ่งที่จะไม่รวมได้โดยการกด _Add not included_
+        ![](/img/Product-create-option-inclusions.png)
+
+</TabItem>
+<TabItem value="Availability & pricing" label="Availability & pricing">
+
+    - **Availability & pricing** ไว้ตั้งค่าเวลาพร้อมใช้งานและการตั้งราคา สามารถเพิ่มโดยการ _Add new schedule_ มีขั้นตอนทั้งหมด 4 ขั้นตอนในการสร้างดังนี้
+    ![](/img/Product-create-option-add-schedule.png)
+        - **Schedule** ตารางเวลา
+            - *Name schedule* ชื่อของตารางเวลา
+            - *Starting date of your activity* ระบุวันที่เริ่มต้นของกิจกรรม พร้อมตัวเลือก _My activity has an end date_ หากเลือก จะแสดงช่องระบุวันที่สิ้นสุดของกิจกรรมได้
+            ![](/img/Product-create-option-add-schedule.png)
+            - *Standard weekly schedule* ตารางเวลาทั่วไปของรายสัปดาห์ มีสองตัวเลือกดังนี้
+            - *Fixed time slots* ช่วงเวลาที่กำหนดตายตัว โดยกด _Add time slot_ เพื่อใช้ในการเพิ่มเวลาที่ต้องการ
+                - *Add time slot* เพิ่มเวลาที่กำหนดตายตัวของแต่ละวันในรายสัปดาห์ โดยสามารถกด ลบ เพื่อลบทีละอันหรือ Clear เพื่อล้างข้อมูลของวันที่ที่กำหนดได้
+                ![](/img/Product-create-option-weekly.png)
+            - *Operating hours* ช่วงเวลาชั่วโมงทำการ โดยกด _Add time slot_ เพื่อใช้ในการเพิ่มเวลาที่ต้องการ
+                - *Add time slot* เพิ่มเวลา เปิด-ปิด ของแต่ละวันในรายสัปดาห์ โดยสามารถกด ลบ เพื่อลบทีละอันหรือ Clear เพื่อล้างข้อมูลของวันที่ที่กำหนดได้
+                ![](/img/Product-create-option-weekly-hours.png)
+            - *Exceptions* ไว้กำหนดวัน-เวลาที่เป็นวันหยุดนักขัตฤกษ์
+            ![](/img/Product-create-option-exceptions.png)
+        - **Pricing Categorries** สำหรับการกำหนดหน่วยของราคา
+            - *Unit* สามารถเลือกหน่วยได้ โดยหากสร้าง Product ใหม่จะต้องทำการ _Create new unit_ ก่อน
+            ![](/img/Product-create-option-unit.png)
+            ![](/img/Product-create-option-new-unit.png)
+                - *Set an age range* สามารถกำหนดช่วงอายุได้ว่า หน่วยนี้กำหนดอายุถึงเท่าไหร่
+                ![](/img/Product-create-option-set-age.png)
+          - *Add Unit Group* สามารถเพิ่มกลุ่มหน่วยได้
+            ![](/img/Product-create-option-add-unit-group.png)
+        - **Capacity** สำหรับกำหนดความจุหรือขีดจำกัดจำนวนผู้เข้าร่วม โดยกำหนดสองช่องคือ
+            - *Min # of participants* สำหรับระบุจำนวนผู้เข้าร่วมขั้นต่ำ(กำหนด 1 ต่ำสุดไม่สามารถลดลงมากกว่านี้ได้)
+            - *Max # of participants* สำหรับระบุจำนวนผู้เข้าร่วมสูงสุด
+            ![](/img/Product-create-option-min-max.png)
+        - **Price** สำหรับการตั้งราคาในระบบของ Schedule นี้ โดยจะแสดง Unit ที่ตั้งไว้
+            - *Price per participant* Capacity ที่ระบุไว้ว่าจำนวนต่ำสุด-สูงสุดที่เข้าร่วม
+            - *Customer pays*  ตั้งราคา
+            ![](/img/Product-create-option-price.png)
+        - **เมื่อดำเนินการกรอกข้อมูลครบทุกขั้นตอนแล้วจะแสดงข้อมูลดังรูป**
+        ![](/img/Product-create-option-finish.png)
+
+</TabItem>
+<TabItem value="Other info" label="Other info">
+
+    {/* - **(หากสร้างเสร็จแล้วระบบจะแสดงหน้าจอดังนี้ สามารถ Copy เพื่อลดระยะเวลาการสร้างได้ หากการสร้างไม่สมบูรณ์หรือไม่ครบถ้วน ระบบจะแสดงสถานะ Draft ไม่แสดงสู่สาธารณะ)** */}
+    - **Other info** กำหนดแบบฟอร์มการจองให้ลูกค้ากรอก  
+        - *Contact info* บังคับเลือก เนื่องจากเป็นข้อมูลที่จำเป็นในการจอง
+        - *Other required info* Other required info จะไม่ได้บังคับเลือก (เมื่อกดเลือกตัวเลือกจะแสดงกล่องเพื่อกรอก hint text หรือสิ่งนี้จำเป็นต้องกรอกใช่หรือไม่ เป็นปุ่มเปิด-ปิด) 
+        ![](/img/Product-create-option-customized-other-info.png)
+        - *Custimized other info* หากเลือก Custimized other info ระบบจะแสดง Customized other info ให้กรอก โดยมีให้เลือกระหว่าง Text และ Sigle selection
+
+         ![](/img/Product-create-option-customized-other-info-custom-single.png)
+         - *Text* จะมีส่วนที่ต้องกรอก 2 ส่วนด้วยกันคือ Other info title และ other info hint text ส่วนที่จำเป็นต้องกรอกคือ Other info title เพื่อแสดงหัวข้อ และ Required แสดงสิ่งนี้จำเป็นต้องกรอกใช่หรือไม่ เป็นปุ่มเปิด-ปิด
+         ![](/img/Product-create-option-customized-other-info-custom-text.png)
+         - *Single selection* จะมีส่วนที่ต้องกรอก 3 ส่วนด้วยกันคือ Other info title , Other info hint text และ Other info dropdown option (สิ่งที่ต้องเลือก 1 อย่าง) โดยสามารถกรอกและเพิ่มโดยกดปุ่ม Add ได้ 
+         ![](/img/Product-create-option-customized-other-info-custom-single-select.png)
+    - **(หลังจากกด Save and Finish ระบบจะเข้าสู่หน้า View Product ทันที)**
+    ![](/img/Product-details.png)
+    </TabItem>
+</Tabs>
