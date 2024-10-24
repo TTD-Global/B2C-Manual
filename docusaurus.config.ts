@@ -76,7 +76,7 @@ let config: Config = {
         src: 'img/NewOA.png',
         href: '/B2C-Manual/content/Home'
       },
-      hideOnScroll: true,
+      hideOnScroll: false,
       items: [
         {
           type: 'docSidebar',
