@@ -6,14 +6,7 @@ import TOCInline from '@theme/TOCInline';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-
-การสร้าง Option สามารถสร้างได้ 2 ช่องทาง ดังนี้ 
-
-![](/img/Product-create-option.png)
-
-![](/img/Product-create-option-prod.png)
-
-โดยมีขั้นตอนหลัก 6 ขั้นตอนดังนี้
+โดยมีขั้นตอนการสร้างหลัก 6 ขั้นตอนดังนี้
 
 <Tabs>
 <TabItem value="Option setup" label="Option setup" default>
@@ -47,9 +40,10 @@ import TabItem from '@theme/TabItem';
         ![](/img/Product-create-option-cutoff.png)
 
     - ***Confirmation Policy*** นโยบายในการยืนยัน
-    - ***Cancellation Policy*** นโยบายในการยกเลิก
 
         ![](/img/Product-create-option-confirm.png)
+
+    - ***Cancellation Policy*** นโยบายในการยกเลิก
 
         ![](/img/Product-create-option-cancel.png)
 
@@ -97,7 +91,9 @@ import TabItem from '@theme/TabItem';
                 - **Pickup spacific place** ระบุสถานที่ที่จะนัดรับแบบเจาะจง โดยจำเป็นต้องระบุสถานที่อย่างน้อย 2 สถานที่เป็นขั้นต่ำ
 
                 ![](/img/Product-create-option-pickup2.png)
+
                 ![](/img/Product-create-option-pickup2.1.png)
+                
                 ![](/img/Product-create-option-pickup2.2.png)
 
             - ***Describe*** กรอกรายละเอียดสำหรับการนัดรับ (กรอกหรือไม่กรอกก็ได้)
@@ -185,7 +181,7 @@ import TabItem from '@theme/TabItem';
 
                 ![](/img/Product-create-option-copy-weekly.png)
 
-            - ***Exceptions*** ไว้กำหนดวันที่เป็นวันหยุดเฉพาะได้ (โดยเวลาจะอ้างอิงจาก time slot ที่กำหนดไว้)
+            - ***Exceptions*** ไว้กำหนดวันที่เป็นวันหยุดเฉพาะ/วันหยุดนักขัตฤกษ์ได้ (โดยเวลาจะอ้างอิงจาก time slot ที่กำหนดไว้) เช่น วันสงกรานต์ต้องการหยุดในวันที่ 13 เมษายน 2024 เป็นต้น
 
             ![](/img/Product-create-option-exceptions.png)
 
@@ -240,21 +236,23 @@ import TabItem from '@theme/TabItem';
     {/* - **(หากสร้างเสร็จแล้วระบบจะแสดงหน้าจอดังนี้ สามารถ Copy เพื่อลดระยะเวลาการสร้างได้ หากการสร้างไม่สมบูรณ์หรือไม่ครบถ้วน ระบบจะแสดงสถานะ Draft ไม่แสดงสู่สาธารณะ)** */}
     **Other info** กำหนดแบบฟอร์มการจองให้ลูกค้ากรอก  
         - ***Contact info*** บังคับเลือก เนื่องจากเป็นข้อมูลที่จำเป็นในการจอง
-        - ***Other required info*** Other required info จะไม่ได้บังคับเลือก (เมื่อกดเลือกตัวเลือกจะแสดงกล่องเพื่อกรอก hint text หรือสิ่งนี้จำเป็นต้องกรอกใช่หรือไม่ เป็น Switch เปิด-ปิด)
+        - ***Other required info*** ไม่ได้บังคับเลือก เมื่อกดเลือกตัวเลือกจะแสดงกล่องเพื่อกรอก hint text และเลือกเปิด-ปิด Required? ว่าลูกค้าจำเป็นต้องกรอกข้อมูลนี้หรือไม่ 
 
         ![](/img/Product-create-option-other-info.png)
 
-        - ***Custimized other info*** หากเลือก Custimized other info ระบบจะแสดง Customized other info ให้กรอก โดยมีให้เลือกระหว่าง Text และ Sigle selection
+        - ***Custimized other info*** หากเลือก Custimized other info ระบบจะแสดงช่องให้กรอกข้อมูล โดยมีให้เลือกระหว่าง Text และ Single selection
 
          ![](/img/Product-create-option-customized-other-info.png)
 
          ![](/img/Product-create-option-customized-other-info-select.png)
 
-         - ***Text*** จะมีส่วนที่ต้องกรอก 2 ส่วนด้วยกันคือ Other info title และ other info hint text ส่วนที่จำเป็นต้องกรอกคือ Other info title เพื่อแสดงหัวข้อ และ Required แสดงสิ่งนี้จำเป็นต้องกรอกใช่หรือไม่ เป็นปุ่มเปิด-ปิด
+         - ***Text***  มีส่วนที่ต้องกรอก 2 ส่วนด้วยกันคือ Other info title และ other info hint text ส่วนที่จำเป็นต้องกรอกคือ Other info title เพื่อแสดงหัวข้อ 
+         และเลือกเปิด-ปิด Required? ว่าลูกค้าจำเป็นต้องกรอกข้อมูลนี้หรือไม่
 
          ![](/img/Product-create-option-customized-other-info-custom-text.png)
 
-         - ***Single selection*** จะมีส่วนที่ต้องกรอก 3 ส่วนด้วยกันคือ Other info title , Other info hint text และ Other info dropdown option (สิ่งที่ต้องเลือก 1 อย่าง) โดยสามารถกรอกและเพิ่มโดยกดปุ่ม Add ได้ 
+         - ***Single selection*** มีส่วนที่ต้องกรอก 3 ส่วนด้วยกันคือ Other info title , Other info hint text และ Other info dropdown option (สิ่งที่ต้องเลือก 1 อย่าง) โดยสามารถกรอกและเพิ่มโดยกดปุ่ม Add ได้ 
+         และเลือกเปิด-ปิด Required? ว่าลูกค้าจำเป็นต้องกรอกข้อมูลนี้หรือไม่
 
          ![](/img/Product-create-option-customized-other-info-custom-single-select.png)
 
