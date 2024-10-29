@@ -9,7 +9,7 @@ import TabItem from '@theme/TabItem';
 โดยมีขั้นตอนการสร้างหลัก 6 ขั้นตอนดังนี้
 
 <Tabs>
-<TabItem value="Option setup" label="Option setup" default>
+<TabItem value="Option setup" label="1. Option setup" default>
 **Option setup** กำหนดข้อมูลของ Option มีรายละเอียดดังนี้
     - ***Option title*** ระบุชื่อ Option
     - ***Option reference code*** รหัสอ้างอิงเพื่อช่วยติดตามตัวเลือก (กรอกหรือไม่กรอกก็ได้)
@@ -48,13 +48,13 @@ import TabItem from '@theme/TabItem';
         ![](/img/Product-create-option-cancel.png)
 
 </TabItem>
-<TabItem value="Meeting point or pickup" label="Meeting point or pickup">
+<TabItem value="Meeting point or pickup" label="2. Meeting point or pickup">
 
 **Meeting point or pickup** ระบุจุดนัดพบหรือการรับส่ง
 
 
 <Tabs>
-<TabItem value="Meeting point" label="Meeting point" >
+<TabItem value="Meeting point" label="1. Meeting point" >
         **Meeting point** เกี่ยวกับจุดนัดพบ
 
         ![](/img/Product-create-option-meeting.png)
@@ -80,7 +80,7 @@ import TabItem from '@theme/TabItem';
             
 
 </TabItem>
-<TabItem value="Pickup service" label="Pickup service" >
+<TabItem value="Pickup service" label="2. Pickup service" >
 
         **Pickup service** เกี่ยวกับจุดนัดรับ
             - ***Add Pickup Address*** จะมี 2 ตัวเลือก
@@ -127,7 +127,7 @@ import TabItem from '@theme/TabItem';
 </Tabs>
 
 </TabItem>
-<TabItem value="Itinerary" label="Itinerary">
+<TabItem value="Itinerary" label="3. Itinerary">
 
     **Itinerary** ระบุเวลา Start Trip , Time และ End Trip โดยสามารถระบุ Detail ได้ว่าช่วงเวลาดังกล่าวทำอะไร
         - ***Start Trip***  เวลาเริ่มของกิจกรรม
@@ -138,7 +138,7 @@ import TabItem from '@theme/TabItem';
         ![](/img/Product-create-option-itinerary.png)
 
 </TabItem>
-<TabItem value="Inclusions" label="Inclusions">
+<TabItem value="Inclusions" label="4. Inclusions">
 
     **Inclusions** ระบุรายละเอียดของสิ่งที่จะรวมอยู่ในราคาและสิ่งที่จะไม่รวมอยู่ในราคาของ Option (กรอกหรือไม่กรอกก็ได้)
         - ***What is included?*** สิ่งที่จะรวมอยู่ในราคาของ Option สามารถเพิ่มสิ่งที่จะรวมได้โดยการกด _Add included_
@@ -147,14 +147,14 @@ import TabItem from '@theme/TabItem';
         ![](/img/Product-create-option-inclusions.png)
 
 </TabItem>
-<TabItem value="Availability & pricing" label="Availability & pricing">
+<TabItem value="Availability & pricing" label="5. Availability & pricing">
 
     **Availability & pricing** ไว้ตั้งค่าเวลาพร้อมใช้งานและการตั้งราคา สามารถเพิ่มโดยการ _Add new schedule_ มีขั้นตอนทั้งหมด 4 ขั้นตอนในการสร้างดังนี้
 
     ![](/img/Product-create-option-add-schedule.png)
 
 <Tabs>
-<TabItem value="Schedule" label="Schedule" >
+<TabItem value="Schedule" label="1. Schedule" >
 
         **Schedule** ตารางเวลา
             - ***Name schedule*** ชื่อของตารางเวลา
@@ -186,7 +186,7 @@ import TabItem from '@theme/TabItem';
             ![](/img/Product-create-option-exceptions.png)
 
     </TabItem>
-    <TabItem value="Pricing Categorries" label="Pricing Categorries" >
+    <TabItem value="Pricing Categorries" label="2. ricing Categorries" >
 
         **Pricing Categorries** สำหรับการกำหนดหน่วยของราคา
             - ***Unit*** สามารถเลือกหน่วยได้ โดยหากสร้าง Product ใหม่จะต้องทำการ _Create new unit_ ก่อน
@@ -208,7 +208,7 @@ import TabItem from '@theme/TabItem';
             
 
     </TabItem>
-    <TabItem value="Capacity" label="Capacity" >
+    <TabItem value="Capacity" label="3. Capacity" >
         **Capacity** สำหรับกำหนดความจุหรือขีดจำกัดจำนวนผู้เข้าร่วม โดยกำหนดสองช่องคือ
             - ***Min # of participants*** สำหรับระบุจำนวนผู้เข้าร่วมขั้นต่ำ(กำหนด 1 ต่ำสุด)
             - ***Max # of participants*** สำหรับระบุจำนวนผู้เข้าร่วมสูงสุด
@@ -216,7 +216,7 @@ import TabItem from '@theme/TabItem';
             ![](/img/Product-create-option-min-max.png)
 
     </TabItem>
-    <TabItem value="Price" label="Price" >
+    <TabItem value="Price" label="4. Price" >
 
         **Price** สำหรับการตั้งราคาในระบบของ Schedule นี้ โดยจะแสดง Unit ที่ตั้งไว้
             - ***Price per participant*** Capacity ที่ระบุไว้ว่าจำนวนต่ำสุด-สูงสุดที่เข้าร่วม
@@ -231,7 +231,7 @@ import TabItem from '@theme/TabItem';
     </Tabs>
 
 </TabItem>
-<TabItem value="Other info" label="Other info">
+<TabItem value="Other info" label="6. Other info">
 
     {/* - **(หากสร้างเสร็จแล้วระบบจะแสดงหน้าจอดังนี้ สามารถ Copy เพื่อลดระยะเวลาการสร้างได้ หากการสร้างไม่สมบูรณ์หรือไม่ครบถ้วน ระบบจะแสดงสถานะ Draft ไม่แสดงสู่สาธารณะ)** */}
     **Other info** กำหนดแบบฟอร์มการจองให้ลูกค้ากรอก  
