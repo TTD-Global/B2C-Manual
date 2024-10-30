@@ -39,11 +39,18 @@ import TabItem from '@theme/TabItem';
 
         ![](/img/Product-create-option-cutoff.png)
 
-    - ***Confirmation Policy*** นโยบายในการยืนยัน
+    - ***Confirmation Policy*** นโยบายในการยืนยัน มีรายละเอียดนโยบายดังนี้
+        - **Instiant confirmation** หมายถึง ระบบจะทำการ Confirm Booking ทันทีหลังจากลูกค้าชำระเงินในระบบเรียบร้อย
+        - **24-hour หรือ 48-hour confirmation** หมายถึง หลังจากลูกค้าชำระเงินในระบบเรียบร้อย ลูกค้าจะต้องรอ Admin ยืนยันผ่านระบบ ภายใน 24 / 48 ชม.
+        - **48-hour หรือ 78-hour before departure** หมายถึง หลังจากลูกค้าชำระเงินในระบบเรียบร้อย ลูกค้าจะต้องรอ Admin ยืนยันผ่านระบบ ภายใน 48 / 72 ชม. ก่อนออกเดินทาง/เริ่มกิจกรรม 
 
         ![](/img/Product-create-option-confirm.png)
 
-    - ***Cancellation Policy*** นโยบายในการยกเลิก
+    - ***Cancellation Policy*** นโยบายในการยกเลิก มีรายละเอียดนโยบายดังนี้
+        - **No Cancellation** หมายถึง ลูกค้าจะไม่สามารถกดยกเลิก Booking ที่ทำการจองเข้ามาได้ด้วยตัวเอง (ติดต่อ Admin ดำเนินการยกเลิกให้เท่านั้น)
+        - **24/48/72-hours หรือ 7/14-days** หมายถึง ลูกค้าจะสามารถยกเลิก Booking ที่ทำการจองเข้ามาได้ด้วยตัวเองภายใน 24/48/72 ชม. และ 7/14 วัน ก่อนออกเดินทาง/เริ่มกิจกรรม
+        - **Free cancellation before the activity start** หมายถึง ลูกค้าสามารถยกเลิก Booking ที่ทำการจองเข้ามาได้ด้วยตัวเองก่อนออกเดินทาง/เริ่มกิจกรรม
+        - **Free cancellation before redemption** หมายถึง ลูกค้าสามารถยกเลิกตั๋วที่ทำการจองเข้ามาได้ด้วยตนเองจนกว่าจะหมดอายุ/หมดกิจกรรม
 
         ![](/img/Product-create-option-cancel.png)
 
@@ -220,7 +227,9 @@ import TabItem from '@theme/TabItem';
 
         **Price** สำหรับการตั้งราคาในระบบของ Schedule นี้ โดยจะแสดง Unit ที่ตั้งไว้
             - ***Price per participant*** Capacity ที่ระบุไว้ว่าจำนวนต่ำสุด-สูงสุดที่เข้าร่วม
-            - ***Customer pays***  ตั้งราคา
+            - ***Customer pays***  ตั้งราคา 
+
+             **P.S.** *opn payment gateway จะชาร์จ 3% ต่อ transactions*
 
             ![](/img/Product-create-option-price.png)
 

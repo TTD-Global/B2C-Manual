@@ -33,7 +33,8 @@ const sidebars: SidebarsConfig = {
           link: {
             type: 'doc',
             id: 'Product/Product/Product_list'
-          },
+          }
+          ,
           items: [
             {
               type: 'category',
@@ -57,8 +58,22 @@ const sidebars: SidebarsConfig = {
       ],
     }
     ,
-    'Bookings'
-    ,
+    {
+      type: 'category',
+      label: 'Bookings',
+      items: [
+        {
+          type:'doc',
+          id:'Booking/Status'
+        }
+        ,
+        {
+          type:'doc',
+          id:'Booking/Bookings'
+        }
+      ]
+    }
+      ,   
     {
       type: 'category',
       label: 'Performance',

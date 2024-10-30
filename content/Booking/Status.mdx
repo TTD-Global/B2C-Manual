@@ -1,0 +1,81 @@
+---
+title: Tab Status
+hide_table_of_contents: true
+---
+
+import DocCardList from '@theme/DocCardList';
+import TOCInline from '@theme/TOCInline';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<TabItem value="Status">
+ 
+Tab Status จะมีทั้งหมด 4 Tab ด้วยกันดังนี้
+
+<Tabs>
+<TabItem value="All" label="All" default>
+
+**All** จะแสดง Status ทั้งหมดที่มีโดยเรียงวันที่จาก Booking date 
+
+    ![](/img/Booking_all.png)
+
+</TabItem>
+<TabItem value="Pending" label="Pending">
+
+**Pending** เป็นสถานะที่รอดำเนินการ Confirm / Cancel Booking โดยจะมี 2 กรณีดังนี้
+
+        - ***Pending*** เป็นสถานะที่รอดำเนินการ Confirm / Cancel Booking โดยที่ยังไม่เกินระยะเวลาเงื่อนไขของ Confirmation Policy
+
+        ![](/img/Booking-pending.png)
+
+        - ***Overdue Pending*** เป็นสถานะที่เกินระยะเวลาเงื่อนไขของ Confirmation Policy 
+
+        ![](/img/Product-filter-status-publish.png)
+
+        - ***Unpublish*** แสดง Product ที่มี Status : Unpublish ทั้งหมด
+
+        ![](/img/Product-filter-status-unpublish.png)
+
+        - ***Draft*** แสดง Product ที่มี Status : Draft ทั้งหมด
+
+        ![](/img/Product-filter-status-draft.png)
+
+</TabItem>
+<TabItem value="Confirmed" label="Confirmed">
+
+**Filter type** แสดง Product ตามหมวดหมู่ 
+        - ***Most popular*** แสดง Product ที่มีการเลือกไว้ให้อยู่ในหมวดหมู่ Most popular 
+
+        ![](/img/Product-filter-most-popular.png)
+
+            - ***Add product*** เพื่อเพิ่ม product ที่ต้องการให้แสดงใน Most popular ได้ 
+
+        ![](/img/Product-filter-most-popular-add.png)
+
+            - สามารถเลื่อนปรับตำแหน่งที่ต้องการได้ 8 product (โดยหากเกิน 8 product จะแสดง see more เพิ่มเติม)
+
+        ![](/img/Product-filter-most-popular-show.png)
+        
+</TabItem>
+<TabItem value="Cancelled" label="Cancelled">
+
+**Filter type** แสดง Product ตามหมวดหมู่ 
+        - ***Most popular*** แสดง Product ที่มีการเลือกไว้ให้อยู่ในหมวดหมู่ Most popular 
+
+        ![](/img/Product-filter-most-popular.png)
+
+            - ***Add product*** เพื่อเพิ่ม product ที่ต้องการให้แสดงใน Most popular ได้ 
+
+        ![](/img/Product-filter-most-popular-add.png)
+
+            - สามารถเลื่อนปรับตำแหน่งที่ต้องการได้ 8 product (โดยหากเกิน 8 product จะแสดง see more เพิ่มเติม)
+
+        ![](/img/Product-filter-most-popular-show.png)
+        
+</TabItem>
+
+</Tabs>
+</TabItem>
+
+
+
