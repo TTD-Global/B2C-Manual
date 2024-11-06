@@ -1,9 +1,8 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import Version from './version.config';
 
-
-let version = '1.2.0'
 
 let config: Config = {
   title: 'B2C',
@@ -48,8 +47,8 @@ let config: Config = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: version,
-              path: version,
+              label: Version,
+              path: Version,
             },
           },
           },
@@ -81,7 +80,7 @@ let config: Config = {
       logo: {
         alt: 'OneAsia',
         src: 'img/NewOA.png',
-        href: `/B2C-Manual/content/${version}/Product/Product/Product_list`
+        href: `/B2C-Manual/content/${Version}/Product/Product/Product_list`
       },
       hideOnScroll: false,
       items: [
