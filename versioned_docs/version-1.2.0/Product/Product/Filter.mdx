@@ -1,0 +1,62 @@
+---
+title: Filter
+hide_table_of_contents: true
+---
+
+import DocCardList from '@theme/DocCardList';
+import TOCInline from '@theme/TOCInline';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<TabItem value="Filter">
+ 
+ใช้ในการช่วยค้นหา Product จะแบ่งเป็น 3 ส่วนดังนี้
+
+<Tabs>
+<TabItem value="Search Product" label="Search Product" default>
+
+**Search Product** ไว้ใช้ในการกรอกค้นหาชื่อ Title ของ Product
+
+    ![](/img/Product-filter-search.png)
+
+</TabItem>
+<TabItem value="Filter by status" label="Filter by status">
+
+**Filter by status** มี Status ดังนี้
+
+        - ***All product*** แสดง Status ของ Product ที่มีทั้งหมด (โดยจะแสดง Status : Draft ขึ้นก่อนเสมอ)
+
+        ![](/img/Product-filter-status.png)
+
+        - ***Publish*** แสดง Product ที่มี Status : Publish ทั้งหมด
+
+        ![](/img/Product-filter-status-publish.png)
+
+        - ***Unpublish*** แสดง Product ที่มี Status : Unpublish ทั้งหมด
+
+        ![](/img/Product-filter-status-unpublish.png)
+
+        - ***Draft*** แสดง Product ที่มี Status : Draft ทั้งหมด
+
+        ![](/img/Product-filter-status-draft.png)
+
+</TabItem>
+<TabItem value="Filter type" label="Filter type">
+
+**Filter type** แสดง Product ตามหมวดหมู่ 
+        - ***Most popular*** แสดง Product ที่มีการเลือกไว้ให้อยู่ในหมวดหมู่ Most popular 
+
+        ![](/img/Product-filter-most-popular.png)
+
+            - ***Add product*** เพื่อเพิ่ม product ที่ต้องการให้แสดงใน Most popular ได้ 
+
+        ![](/img/Product-filter-most-popular-add.png)
+
+            - สามารถเลื่อนปรับตำแหน่งที่ต้องการได้ 8 product (โดยหากเกิน 8 product จะแสดง see more เพิ่มเติม)
+
+        ![](/img/Product-filter-most-popular-show.png)
+        
+</TabItem>
+
+</Tabs>
+</TabItem>

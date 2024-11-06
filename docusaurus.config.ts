@@ -3,6 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 
+let version = '1.2.0'
 
 let config: Config = {
   title: 'B2C',
@@ -44,7 +45,13 @@ let config: Config = {
           // Remove this to remove the "edit this page" links.
           // editUrl:
           //   'https://github.com/amareshui/TM-Manual_Dino.git',
-         
+          lastVersion: 'current',
+          versions: {
+            current: {
+              label: version,
+              path: version,
+            },
+          },
           },
         blog: {
           showReadingTime: true,
@@ -74,7 +81,7 @@ let config: Config = {
       logo: {
         alt: 'OneAsia',
         src: 'img/NewOA.png',
-        href: '/B2C-Manual/content/Home'
+        href: `/B2C-Manual/content/${version}/Product/Product/Product_list`
       },
       hideOnScroll: false,
       items: [

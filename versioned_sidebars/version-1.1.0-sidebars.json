@@ -1,0 +1,55 @@
+{
+  "tutorialSidebar": [
+    "Home",
+    {
+      "type": "category",
+      "label": "Product",
+      "items": [
+        {
+          "type": "category",
+          "label": "Product list",
+          "link": {
+            "type": "doc",
+            "id": "Product/Product/Product_list"
+          },
+          "items": [
+            "Product/Product/Product",
+            "Product/Product/Option",
+            "Product/Product/Filter",
+            "Product/Product/Button_Action"
+          ]
+        },
+        "Product/Availability",
+        "Product/SpecialOffer"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Bookings",
+      "items": [
+        {
+          "type": "doc",
+          "id": "Booking/Status"
+        },
+        {
+          "type": "doc",
+          "id": "Booking/Bookings"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Performance",
+      "items": [
+        "Performance/Reviews",
+        "Performance/Analytics"
+      ]
+    },
+    "Finance",
+    {
+      "type": "html",
+      "value": "<hr style=\"border-color: black; margin: 8px 0;\">"
+    },
+    "Account"
+  ]
+}
