@@ -10,70 +10,99 @@ import TabItem from '@theme/TabItem';
 
 <TabItem value="Booking">
  
-ไว้ใช้ในการ Confirm / Concel Booking ที่เข้ามา โดยจะมี Tab Status 4 อัน ดังนี้
+ไว้ใช้ในการ Confirm / Concel Booking ที่เข้ามา โดยจะมี ส่วนสำคัญ 4 ส่วน ดังนี้
+
+{/* ![](/img/Booking_page.png) */}
+
 
 <Tabs>
-<TabItem value="All" label="All" default>
+<TabItem value="Advanced Search" label="Advanced Search" default>
 
-**All** จะแสดง Status ทั้งหมดที่มีโดยเรียงวันที่จาก Booking date 
+**Advanced Search** ใช้ในการค้นหา Booking ที่มีในระบบ โดยสามารถค้นหาได้ดังนี้
 
-    ![](/img/Booking_all.png)
+    ![](/img/Booking_advance_search.png)
 
-</TabItem>
-<TabItem value="Pending" label="Pending">
-
-**Filter by status** มี Status ดังนี้
-
-        - ***All product*** แสดง Status ของ Product ที่มีทั้งหมด (โดยจะแสดง Status : Draft ขึ้นก่อนเสมอ)
-
-        ![](/img/Product-filter-status.png)
-
-        - ***Publish*** แสดง Product ที่มี Status : Publish ทั้งหมด
-
-        ![](/img/Product-filter-status-publish.png)
-
-        - ***Unpublish*** แสดง Product ที่มี Status : Unpublish ทั้งหมด
-
-        ![](/img/Product-filter-status-unpublish.png)
-
-        - ***Draft*** แสดง Product ที่มี Status : Draft ทั้งหมด
-
-        ![](/img/Product-filter-status-draft.png)
+    - ***Search Product*** ไว้ใช้ในการค้นหาชื่อ Product นั้นๆ
+    - ***Booking ID*** ใช้ในการค้นหา Booking ID 
+    - ***Booking date*** ใช้ในการค้นหาตามวันที่ที่มีการ Booking เข้ามา
+    - ***Travel date*** ใช้ในการค้นหาตามวันที่ที่เริ่มกิจกรรม/วันออกเดินทาง
+    - ***Status*** ใช้ในการค้นหาตาม Status (โดยจะ default ไว้ที่ All)
 
 </TabItem>
-<TabItem value="Confirmed" label="Confirmed">
 
-**Filter type** แสดง Product ตามหมวดหมู่ 
-        - ***Most popular*** แสดง Product ที่มีการเลือกไว้ให้อยู่ในหมวดหมู่ Most popular 
+<TabItem value="Booking ID" label="Booking ID">
 
-        ![](/img/Product-filter-most-popular.png)
+**Booking ID** เมื่อกดจะเป็นการ View Booking เพื่อตรวจสอบรายละเอียดข้อมูลที่มีของ Booking นั้นๆ และสามารถ Confirm / Cancel Booking ได้
 
-            - ***Add product*** เพื่อเพิ่ม product ที่ต้องการให้แสดงใน Most popular ได้ 
+        ![](/img/Booking_view.png)
 
-        ![](/img/Product-filter-most-popular-add.png)
-
-            - สามารถเลื่อนปรับตำแหน่งที่ต้องการได้ 8 product (โดยหากเกิน 8 product จะแสดง see more เพิ่มเติม)
-
-        ![](/img/Product-filter-most-popular-show.png)
         
 </TabItem>
-<TabItem value="Cancelled" label="Cancelled">
+<TabItem value="Product" label="Product">
 
-**Filter type** แสดง Product ตามหมวดหมู่ 
-        - ***Most popular*** แสดง Product ที่มีการเลือกไว้ให้อยู่ในหมวดหมู่ Most popular 
-
-        ![](/img/Product-filter-most-popular.png)
-
-            - ***Add product*** เพื่อเพิ่ม product ที่ต้องการให้แสดงใน Most popular ได้ 
-
-        ![](/img/Product-filter-most-popular-add.png)
-
-            - สามารถเลื่อนปรับตำแหน่งที่ต้องการได้ 8 product (โดยหากเกิน 8 product จะแสดง see more เพิ่มเติม)
-
-        ![](/img/Product-filter-most-popular-show.png)
+**Product** เมื่อกดจะเข้าสู่หน้า Product detail ของ Product นั้นๆเพื่อตรวจสอบรายละเอียดของ Product และ Option ได้
+       
+        ![](/img/Booking_product.png)
         
 </TabItem>
+<TabItem value="Action Button" label="Action Button">
 
+**Action Button** ไว้ใช้ในการจัดการ Booking ต่างๆ ซึ่งจะแยกเป็น 3 ส่วนด้วยกันดังนี้
+
+<TabItem value="Action">
+<Tabs>
+<TabItem value="View" label="View" default>
+***View*** แสดงรายละเอียดข้อมูลของ Booking 
+
+        ![](/img/Booking_view.png)
+
+</TabItem>
+<TabItem value="Confirm booking" label="Confirm booking" default>
+***Confirm booking*** กดเพื่อทำการยืนยัน booking ให้ลูกค้า 
+        ![](/img/Booking_action_confirm.png)
+
+</TabItem>
+<TabItem value="Cancel booking" label="Cancel booking" default>
+***Cancel booking*** กด เพื่อทำการยกเลิก booking ให้ลูกค้า โดยจะต้องให้เหตุผลในการยกเลิก booking ด้วย โดยจะมีหัวข้อดังนี้
+        - **Operational reasons** (เหตุผลเชิงปฏิบัติการ):
+                - Guide or driver had an accident or is sick (มัคคุเทศก์หรือคนขับรถเกิดอุบัติเหตุหรือลาป่วย)
+                - Vehicle out of order (ยานพาหนะไม่สามารถใช้งานได้)
+
+        - **Activity does not take place at the date or time offered on One asia** (กิจกรรมไม่ได้จัดขึ้นตามวันที่หรือตามเวลาที่ระบุในระบบ One asia):
+                - Activity not accessible due to planned maintenance (กิจกรรมไม่สามารถเข้าถึงได้เนื่องจากการบำรุงรักษาที่วางแผนไว้)
+                - Activity or activity option is no longer offered (กิจกรรมหรือการเลือกกิจกรรมไม่ได้ถูกเสนออีกต่อไป)
+                - Activity is not possible due to public holiday or planned public event (กิจกรรมไม่สามารถจัดขึ้นได้เนื่องจากวันหยุดสาธารณะหรือกิจกรรมสาธารณะที่กำหนดไว้ล่วงหน้า)
+                
+        - **Activity not offered as described** (กิจกรรมไม่ได้ถูกนำเสนอเหมือนที่อธิบายไว้):
+                - Activity is not offered in the language the customer booked (กิจกรรมไม่ได้ถูกนำเสนอในภาษาที่ลูกค้าจองไว้)
+                - The activity's description was not accurate (คำอธิบายของกิจกรรมไม่ถูกต้อง)
+
+        - **Booking cannot be confirmed** (การจองไม่สามารถยืนยันได้):
+                - Activity is fully booked (กิจกรรมเต็มจำนวนแล้ว)
+                - Last-minute booking, no time to arrange or confirm (การจองในนาทีสุดท้าย ไม่มีเวลาในการจัดการหรือตรวจสอบ)
+                - Minimum number of participants was not reached (จำนวนผู้เข้าร่วมกิจกรรมขั้นต่ำไม่ครบตามที่กำหนด)
+
+        - **Force Majeure events** (เหตุการณ์ที่ไม่สามารถควบคุมได้):
+                - Act of terrorism (การก่อการร้าย)
+                - Bad weather condition (สภาพอากาศไม่ดี)
+                - Electric or internet outage (ไฟฟ้าหรืออินเทอร์เน็ตขัดข้อง)
+                - Institutional or political events (เหตุการณ์สถาบันหรือการเมือง)
+                - Natural disaster (ภัยพิบัติทางธรรมชาติ)
+                - Pandemic or epidemic outbreaks (การแพร่ระบาดหรือการระบาดใหญ่)
+                - Political reasons (เหตุผลทางการเมือง)
+                - Strike (การนัดหยุดงาน)
+                - War (สงคราม)
+                
+        ![](/img/Booking_action_cancel.png)
+
+</TabItem>
+</Tabs>
+</TabItem>
+
+        
+
+        
+</TabItem>
 </Tabs>
 </TabItem>
 
