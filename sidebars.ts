@@ -36,17 +36,8 @@ const sidebars: SidebarsConfig = {
           }
           ,
           items: [
-            {
-              type: 'category',
-              label:  'Create new Product',
-              link:{
-                type: 'doc',
-                id: 'Product/Product/Product'
-              },
-              items:[
-                  'Product/Product/Option'
-              ]
-            },
+            'Product/Product/Product',
+            'Product/Product/Option',
             'Product/Product/Filter',
             'Product/Product/Button_Action'
           ],
