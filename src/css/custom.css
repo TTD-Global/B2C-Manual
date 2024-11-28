@@ -73,3 +73,9 @@ em{
  .pagination-nav {
   display: none;
   }
+.theme-doc-version-banner {
+display: none;
+}
+.theme-doc-version-badge{
+  display: none;
+  }
