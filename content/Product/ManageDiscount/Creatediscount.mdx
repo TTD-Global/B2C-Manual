@@ -12,92 +12,55 @@ import TabItem from '@theme/TabItem';
 
 การสร้าง Discounts มีทั้งหมด 2 ขั้นตอนด้วยกัน
 
-![](/img/Create_discount_Basic_info.png)
 
 <Tabs>
 <TabItem value="Basicinfo" label="Basic infomation" default>
 
-**View** แสดงข้อมูล Product Detail ดังนี้
+**Basic infomation** เป็นข้อมูลจำเป็นต้องกรอก โดยมีข้อมูลดังนี้
 
 ![](/img/Create_discount_Basic_info.png)
 
-<Tabs>
-<TabItem value="Manage Product" label="Manage Product" default>
+- ***Discount name*** กำหนดชื่อไว้ใช้บ่งบอกส่วนลดนี้ จะไม่แสดงที่หน้า Website แสดงที่ Admin เท่านั้น
+- ***Prefix code*** กำหนดตัวอักษรภาษาอังกฤษเท่านั้น 3 ตัวอักษร 
+- ***Discount Type*** โดยจะแบ่งออกเป็น 2 ประเภทของส่วนลด คือ ส่วนลดแบบ Fix กับส่วนลดแบบ Percent
+    - ***Fix*** เป็นการกำหนดราคาที่ตายตัวว่าต้องการลดกี่บาท
+        - ***Discount Amount*** กำหนดราคาที่ต้องการลด
 
-**Manage Product** การจัดการ Product
+                ![](/img/Fix_price.png)
+    
+    - ***Percent*** จะกำหนดเปอร์เซนต์ในการลดและสามารถตั้งค่าได้ว่าจะลดสูงสุดกี่บาท
+        - ***Discount Amount*** กำหนดจำนวนเปอร์เซนต์ที่ต้องการลด
+        - ***Maximum Discount Price*** กำหนดจำนวนเงินที่จะลดสูงสุดให้ได้ เช่น หาก Set Amount ที่ 200 บาท ลูกค้าจะได้รับส่วนลดสูงสุดได้ไม่เกิน 200 บาท หากตั้งเป็น No limit จะไม่กำหนดราคาที่จะลด เป็นต้น
 
-            - ***Public - Unpublish*** เผยแพร่-ไม่เผยแพร่ สู่สาธารณะ
+                ![](/img/Percent_price.png)
 
-            ![](/img/Product-manage-product.png)
+- ***Minimum Basket Price*** กำหนดราคาขั้นต่ำที่ลูกค้าจะต้องซื้อเพื่อใช้งานโค้ดส่วนลด
+- ***Usage Quantity*** ไว้ใช้กำหนดจำนวนผู้ใช้งานโค้ดส่วนลด / No limit เพื่อใช้งานได้ไม่จำกัด
+- ***Maximum number of codes per buyer*** กำหนดจำนวนผู้ซื้อสามารถใช้โค้ดนี้ได้สูงสุด กี่ครั้ง
+- ***Code usage period*** กำหนดวันที่สามารถใช้งานโค้ดได้
+- ***Discount code*** จะเป็นการ Generate code ออกมา โดยนำ Prefix + Discount Amount + สุ่มตัวอักษร 3 หลัก 
 
-            - ***Delete Product*** ลบ Product
+ป.ล. หากมีการแก้ไขข้อมูลจะต้องกด Get Code ที่ Discount code ใหม่อีกครั้งเพื่อ Generate Code ใหม่แล้วถึงจะ Conticnue ได้
 
-            ![](/img/Product-manage-delete.png)
-
-            - ***View reviews*** เมื่อทำการกดปุ่ม New Tab ไปยังหน้า Reviews
-
-            ![](/img/Product-detail-manage-reviews.png)
-
-            - ***View on website*** แสดงหน้า Product detail ตัวอย่างบน Website
-
-</TabItem>
-<TabItem value="Product" label="Product">
-
-**Product** แสดง Status, Title, Discription
-            - ***Status*** จะแสดงสถานะ 3 สถานะ ดังนี้
-                - **Publish** ผลิตภัณฑ์หรือเนื้อหาที่กำลังใช้งานหรือเผยแพร่อยู่
-                - **Unpublish** การหยุดใช้งานหรือยกเลิกการเผยแพร่ผลิตภัณฑ์หรือเนื้อหา
-                - **Draft** ผลิตภัณฑ์หรือเนื้อหาที่ยังไม่เผยแพร่และอยู่ในสถานะร่าง
-
-                ![](/img/Product-detail-status.png)
-
-            - ***Action*** สามารถทำการแก้ไขข้อมูล หรือแสดง Website เพื่อตรวจสอบการแสดง Website ได้
-
-            ![](/img/Product-detail-product-action.png)
-
-</TabItem>
-<TabItem value="Options" label="Options">
-
-**Options** แสดงข้อมูลดังนี้
-            - ***Create new option*** ไว้ใช้ในการสร้าง Option เพิ่มเติม
-
-            ![](/img/Product-create-option-prod.png)
-
-            - ***Status*** จะแสดงสถานะ 3 สถานะ ดังนี้
-
-                - **Active** ผลิตภัณฑ์หรือเนื้อหาที่กำลังใช้งานหรือเผยแพร่อยู่
-                - **Deactivate** การหยุดใช้งานหรือยกเลิกการเผยแพร่ผลิตภัณฑ์หรือเนื้อหา
-                - **Draft** ผลิตภัณฑ์หรือเนื้อหาที่ยังไม่เผยแพร่และอยู่ในสถานะร่าง (หากกรอกข้อมูลไม่ครบทุกขั้นตอนจะขึ้นสถานะเป็น "Draft")
-
-                ![](/img/Product-detail-status.png)
-
-            - ***Action*** สามารถทำการแก้ไข, Logs, Deactivate, Delete เพื่อจัดการ Option
-
-                - **Edit** สามารถทำการแก้ไข Option ได้
-
-                {/* - *Logs* บันทึกกิจกรรมที่เกี่ยวข้องกับตัวเลือก Option นี้ */}
-                - **Active-Deactivate** เปิด-ปิด การใช้งาน Option นี้
-                - **Delete** ลบ Option ออก
-
-                ![](/img/Product-detail-option-action.png)
-</TabItem>
-</Tabs>
 </TabItem>
 
 <TabItem value="Setup" label="Setup Products & Options">
 
-**View on website** แสดงหน้า Product detail ตัวอย่างบน Website
+**Setup Products & Options** เป็นการกำหนดว่าจะสามารถใช้โค้ดนี้กับ Product / Options ไหนได้บ้าง
 
-    ![](/img/Product_preview.jpeg)
+- ***All products & options*** หมายถึง ทุก Product และ Options สามารถใช้งานโค้ดส่วนลดนี้ได้
+
+    ![](/img/Setup_Product-options.png)
+
+- ***Selected products*** หมายถึง ระบุ Product และ Options ที่สามารถใช้งานโค้ดส่วนลดนี้ได้
+
+    ![](/img/Setup_Add_Product.png)
 
 </TabItem>
 </Tabs>
 
 </TabItem>
 
-
-1. Basic infomation
-2. Setup Product & Options
 
 
 
