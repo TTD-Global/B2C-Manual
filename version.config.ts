@@ -3,7 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 
-let Version = '1.2.0'
+let Version = '1.3.0'
 
 
 export default Version
