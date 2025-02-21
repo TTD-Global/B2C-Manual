@@ -1,0 +1,74 @@
+---
+title: Tab Status
+hide_table_of_contents: true
+---
+
+import DocCardList from '@theme/DocCardList';
+import TOCInline from '@theme/TOCInline';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<TabItem value="Status">
+ 
+Tab Status จะมีทั้งหมด 4 Tab ด้วยกันดังนี้
+
+<Tabs>
+<TabItem value="All" label="All" default>
+
+**All** จะแสดง Status ทั้งหมดที่มีโดยเรียงวันที่จาก Booking date / วันที่ Booking เข้ามา
+
+    ![](/img/Booking_all.png)
+
+</TabItem>
+<TabItem value="Pending" label="Pending">
+
+**Pending** เป็นสถานะที่รอดำเนินการ Confirm / Cancel Booking โดยจะมี 2 กรณีดังนี้
+
+        - ***Pending*** เป็นสถานะที่รอดำเนินการ Confirm / Cancel Booking โดยที่ยังไม่เกินระยะเวลาเงื่อนไขของ Confirmation Policy
+
+        ![](/img/Booking-pending.png)
+
+        - ***Overdue Pending*** เป็นสถานะที่**เกินระยะเวลา**เงื่อนไขของ Confirmation Policy 
+        ตัวอย่างกรณีต่างๆ
+            - **24/48 hr. confirm**  Product1 ตั้งเงื่อนไข 24hr. confirmation หากเกิน 24 ชม.แล้ว ยังไม่มีการดำเนินการใดๆจากฝั่ง Admin ระบบจะทำการขึ้น Overdue ให้ Admin ทราบว่าเกินกำหนดแล้ว
+            - **48/78 hr. before departure** Product2 ตั้งเงื่อนไข 48hr. before confirmation จะขึ้น Overdue ช่วง 24 ชม. ก่อนที่จะเริ่มกิจกรรมหรือออกเดินทาง
+
+        ![](/img/Booking_pending_overdue.png)
+
+        - ***Action Button/View*** จะสามารถ Confirm / Cancel Booking ได้
+
+        ![](/img/Booking_confirm_cancel.png)
+        ![](/img/Booking_view_confirm_cancel.png)
+
+        - **P.S.** สามารถเลือก Check box เพื่อทำการ Confirm หลายๆ Booking ได้
+
+        ![](/img/Booking_checkbox_confirm.png)
+
+</TabItem>
+<TabItem value="Confirmed" label="Confirmed">
+
+**Confirmed** เป็นสถานะที่ได้ Confirm Booking ลูกค้าเรียบร้อย 
+
+    - ***Cancel Booing*** สถานะนี้ยังสามารถ Cancel Booking ได้
+    
+    ![](/img/Booking_status_confirm_button_cancel.png)
+    ![](/img/Booking_status_confirm_view_button_cancel.png)
+
+    - **P.S.** หากเป็นกรณี Instant confirm เมื่อลูกค้าชำระเงินเรียบร้อย ระบบจะ Confirm Booking ให้ทันทีไม่ต้องรอ Admin
+
+        ![](/img/Booking_confirm.png)
+        
+</TabItem>
+<TabItem value="Cancelled" label="Cancelled">
+
+**Cancelled** เป็นสถานะที่ได้ Cancel Booking ลูกค้า ไม่ว่าจะเป็นกรณียกเลิกด้วยตัวเองหรือ ยกเลิกด้วย Admin
+
+        ![](/img/Booking_cancel.png)
+        
+</TabItem>
+
+</Tabs>
+</TabItem>
+
+
+
