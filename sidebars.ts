@@ -43,9 +43,23 @@ const sidebars: SidebarsConfig = {
           ],
           
         },
-        
+        {
+          type: 'category', 
+          label: 'Manage Special Offer',
+          link: {
+            type: 'doc',
+            id: 'Product/SpecialOffer/SpecialOffer'
+          }
+          ,
+          items: [
+            'Product/SpecialOffer/CreateSpecialOffer',
+            'Product/SpecialOffer/Filter',
+            'Product/SpecialOffer/Action',
+          ],
+          
+        },
         // 'Product/Availability',
-        // 'Product/SpecialOffer',
+        
         {
           type: 'category',
           label: 'Manage Discount',
