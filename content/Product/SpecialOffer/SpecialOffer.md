@@ -10,7 +10,7 @@ import TabItem from '@theme/TabItem';
 มีส่วนสำคัญๆดังนี้
 - **Create a special offer** ใช้ในการสร้าง Special Offer
 - **Filter** ระบบการช่วยค้นหา Special Offer
-- **Action** ไว้ใช้ในการจัดการ Special Offer
+- **Action** ไว้ใช้ในการจัดการ Special Offer 
 
 ![](/img/Special-offer.png)
 
