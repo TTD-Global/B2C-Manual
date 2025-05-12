@@ -41,11 +41,27 @@ const sidebars: SidebarsConfig = {
             'Product/Product/Filter',
             'Product/Product/Button_Action'
           ],
-
         },
-
-        // 'Product/Availability',
-        // 'Product/SpecialOffer',
+        {
+          type: 'category',
+          label: 'Availability',
+          link: {
+            type: 'doc',
+            id: 'Product/Availability/Availability'
+          },
+          items: []
+        },
+        {
+          type: 'category',
+          label: 'Special Offer',
+          link: {
+            type: 'doc',
+            id: 'Product/SpecialOffer/SpecialOffer'
+          },
+          items: [
+            'Product/SpecialOffer/CreateSpecialOffer'
+          ]
+        },
         {
           type: 'category',
           label: 'Manage Discount',
