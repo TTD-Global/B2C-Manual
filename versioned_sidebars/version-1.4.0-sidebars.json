@@ -1,0 +1,62 @@
+{
+  "tutorialSidebar": [
+    {
+      "type": "category",
+      "label": "Product",
+      "items": [
+        {
+          "type": "category",
+          "label": "Product list",
+          "link": {
+            "type": "doc",
+            "id": "Product/Product/Product_list"
+          },
+          "items": [
+            "Product/Product/Product",
+            "Product/Product/Option",
+            "Product/Product/Filter",
+            "Product/Product/Button_Action"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Manage Discount",
+          "link": {
+            "type": "doc",
+            "id": "Product/ManageDiscount/ManageDiscount"
+          },
+          "items": [
+            "Product/ManageDiscount/Creatediscount",
+            "Product/ManageDiscount/Filter",
+            "Product/ManageDiscount/Action"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Bookings",
+      "items": [
+        "Booking/Booking/Bookings",
+        {
+          "type": "category",
+          "label": "Refund",
+          "link": {
+            "type": "doc",
+            "id": "Booking/Refund/Refund"
+          },
+          "items": [
+            "Booking/Refund/CreateRefund",
+            "Booking/Refund/ManageRefund",
+            "Booking/Refund/RefundList"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "html",
+      "value": "<hr style=\"border-color: black; margin: 8px 0;\">"
+    },
+    "Account"
+  ]
+}
