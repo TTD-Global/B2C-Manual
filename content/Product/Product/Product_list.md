@@ -9,11 +9,11 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 มีส่วนสำคัญๆดังนี้
+
 - **Create new product** ใช้ในการสร้าง Product
 - **Filter** ระบบการช่วยค้นหา Product
 - **Action** ไว้ใช้ในการจัดการ Product
 
-![](/img/Product-menu.png)
 ![](/img/Product-list.png)
 
 <DocCardList />
