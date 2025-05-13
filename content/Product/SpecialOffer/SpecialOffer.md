@@ -12,26 +12,40 @@ import TabItem from '@theme/TabItem';
 
 <Tabs>
   <TabItem value="details" label="Details" default>
+ 
+- **Special offer Name** - ชื่อ Special offer
+- **Applies to** - ชื่อ Product (นำเม้าส์ชี้ จะบอกชื่อ Product ที่มีอยู่)
+- **Claming Period** - ช่วงวันที่มี Special offer
+- **Usage Quantity** - จำนวนสิทธิ์ในการใช้งาน Special offer
+- **Usage** - จำนวนผู้ใช้ Special offer นี้
+- **Discount Percent** - จำนวนส่วนลดเปอร์เซนต์ของ Special offer นี้
+- **Status** - สถานะของ Special offer (Active / Paused / Expried)
+  - ***Active*** - สถานะ Special offer เปิดใช้งานอยู่
+  - ***Paused*** - สถานะ Special offer หยุดใช้งานชั่วคราว
+  - ***Expried*** - สถานะ Special offer หมดอายุการใช้งานแล้ว (สถานะนี้จะไม่สามารถแก้ไขหรือดำเนินการใดๆได้)
 
-**รายละเอียด (Details)**  
-- ในแต่ละรายการ Special Offer จะแสดงข้อมูลสำคัญ เช่น ชื่อโปรโมชั่น, สินค้าที่ใช้, ช่วงเวลาที่รับสิทธิ์, จำนวนการใช้, และสถานะ  
-- สามารถดูรายละเอียดเพิ่มเติมหรือแก้ไขแต่ละโปรโมชั่นได้
+![](/img/Specialoffer_details.png)
 
 
 </TabItem>
 <TabItem value="filter" label="Filter">
 
-**ฟิลเตอร์ (Filter)**  
-- สามารถค้นหาสินค้า หรือกรองสถานะของโปรโมชั่น (Active, Paused, Expired) ได้จากแถบด้านซ้ายมือ  
-- ช่วยให้ค้นหาและจัดการโปรโมชั่นได้สะดวกและรวดเร็ว
+- **Search Product** - ค้นหาจากชื่อ Product ที่ใช้ร่วมกับ Special offer
+- **Search Options** - ค้นหาจากชื่อ Options ที่ใช้ร่วมกับ Special offer
+- **Filter by Status** - ค้นหาจาก Status (All / Active / Paused / Expried)
+
+![](/img/Filter_specialoffer.png)
 
 </TabItem>
 <TabItem value="action" label="Action">
 
+**Action Button**  
+- **Edit** - แก้ไข Special offer
+- **See this offer online** - แสดงหน้า Website ของ Special offer นี้
+- **Pasued/Reacivate** - หยุดการใช้งาน Special offer ชั่วคราว หรือ เปิดใช้งาน Special offer อีกครั้ง
+- **Delete** - ลบ Special offer นี้ออกจากระบบ
 
-**ปุ่ม Action**  
-- ปุ่ม ... (เพิ่มเติม) ในแต่ละรายการ สามารถเลือก "Edit" (แก้ไข), "See this offer online" (ดูออนไลน์), "Pause" (หยุดชั่วคราว), และ "Delete" (ลบ)  
-- ปุ่ม "Create a special offer" สำหรับสร้างโปรโมชั่นใหม่
+![](/img/Action_Specialoffer.png)
 
 
 </TabItem>
