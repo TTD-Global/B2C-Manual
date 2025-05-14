@@ -1,18 +1,90 @@
 ---
 title: Special Discount
 hide_table_of_contents: true
+pagination_next: null
+pagination_prev: null
 ---
 import DocCardList from '@theme/DocCardList';
 import TOCInline from '@theme/TOCInline';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+<Tabs>
+<TabItem value="details" label="Details" default>
 
-มีส่วนสำคัญๆดังนี้
-- **Create new discount** ใช้ในการสร้าง discount
-- **Filter** ระบบการช่วยค้นหา discount
-- **Action** ไว้ใช้ในการจัดการ discount
+- **Discount Name** - ชื่อ Discount
+- **Type** - ประเภทของ Discount (Percent / Fixed Amount)
+- **Status** - สถานะของ Discount
+    - **Active** - กำลังใช้งาน
+    - **Paused** - หยุดใช้งานชั่วคราว
+    - **Expired** - หมดอายุ
 
-![](/img/Manage-discount.jpeg)
+![](/img/Manage-discount.png)
 
-<DocCardList />
+</TabItem>
+<TabItem value="filter" label="Filter">
+
+<Tabs>
+<TabItem value="Search Discount" label="Search Discount" default>
+
+- **Search Discount** - ไว้ใช้ในการค้นหาชื่อ Discount
+
+    {/* ![](/img/Search_discount.png) */}
+
+</TabItem>
+<TabItem value="Filter by status" label="Filter by status">
+
+**Filter by status** มี Status ดังนี้
+    - ***All discount*** แสดง Discount ทั้งหมด
+    - ***Active*** แสดง Discount ที่กำลังใช้งาน
+    - ***Paused*** แสดง Discount ที่หยุดใช้งาน
+    - ***Expired*** แสดง Discount ที่หมดอายุ
+
+    {/* ![](/img/Discount-status.png) */}
+
+</TabItem>
+</Tabs>
+
+</TabItem>
+<TabItem value="action" label="Action">
+
+<Tabs>
+<TabItem value="View" label="View" default>
+
+<Tabs>
+<TabItem value="Manage Discount" label="Manage Discount" default>
+
+- ***Pause - Reactivate*** หยุด/เปิดใช้งาน Discount
+- ***Delete Discount*** ลบ Discount
+- ***View usage*** ดูการใช้งาน Discount
+- ***View on website*** แสดงหน้า Discount บน Website
+
+{/* ![](/img/Manage_discount.png) */}
+
+</TabItem>
+<TabItem value="Discount" label="Discount">
+
+- ***Status*** จะแสดงสถานะ 3 สถานะ ดังนี้
+    - **Active** กำลังใช้งาน
+    - **Paused** หยุดใช้งาน
+    - **Expired** หมดอายุ
+- ***Action*** สามารถแก้ไข Discount หรือดูรายละเอียด Discount ได้
+
+{/* ![](/img/Discount-status.png) */}
+
+</TabItem>
+<TabItem value="Usage" label="Usage">
+
+- ***View usage*** ดูรายละเอียดการใช้ Discount
+- ***User*** แสดงชื่อผู้ใช้ Discount
+- ***Booking*** แสดงข้อมูลการใช้ Discount ในแต่ละ Booking
+
+{/* ![](/img/Purchase_Order.png) */}
+
+</TabItem>
+</Tabs>
+</TabItem>
+</Tabs>
+
+</TabItem>
+</Tabs>

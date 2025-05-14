@@ -1,6 +1,8 @@
 ---
 title: Booking list
 hide_table_of_contents: true
+pagination_next: null
+pagination_prev: null
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -32,7 +34,7 @@ import TabItem from '@theme/TabItem';
 
     - ***Search Product*** ไว้ใช้ในการค้นหาชื่อ Product นั้นๆ
     - ***Booking ID*** ใช้ในการค้นหา Booking ID 
-    - ***Booking date*** ใช้ในการค้นหาตามวันที่ที่มีการ Booking เข้ามา
+    - ***Booking date*** ใช้ในการค้นหาตามวันที่มีการ Booking เข้ามา
     - ***Travel date*** ใช้ในการค้นหาตามวันที่ที่เริ่มกิจกรรม/วันออกเดินทาง
     - ***Status*** ใช้ในการค้นหาตาม Status (โดยจะ default ไว้ที่ All)
 

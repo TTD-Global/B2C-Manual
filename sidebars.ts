@@ -37,9 +37,7 @@ const sidebars: SidebarsConfig = {
           ,
           items: [
             'Product/Product/Product',
-            'Product/Product/Option',
-            'Product/Product/Filter',
-            'Product/Product/Button_Action'
+            'Product/Product/Option'
           ],
         },
         {

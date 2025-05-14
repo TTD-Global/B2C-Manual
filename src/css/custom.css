@@ -6,9 +6,11 @@
 
 /* You can override the default Infima variables here. */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped&display=swap');
+
 body {
   font-family: 'Noto Sans Thai Looped', sans-serif;
 }
+
 :root {
   --ifm-color-primary: #046EE9;
   --ifm-color-primary-dark: #142B41;
@@ -33,6 +35,7 @@ body {
   --ifm-color-primary-lightest: #142B41;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
 .navbar__brand {
   align-items: center;
   color: var(--ifm-navbar-link-color);
@@ -41,41 +44,55 @@ body {
   min-width: 0;
 }
 
-h1{
-  color: #101828;
-}
-strong{
-  color:#101828;
-}
-em{
+h1 {
   color: #101828;
 }
 
-.col--3{
+strong {
+  color: #101828;
+}
+
+em {
+  color: #101828;
+}
+
+.col--3 {
   display: none !important;
 }
-.card:hover{
+
+.card:hover {
   color: #046EE9;
 }
+
 /* .card:active{
   background-color: #F77339;
   color:#ffff;
 } */
- .navbar{
+.navbar {
   background-color: #1D2939;
- }
- .navbar__item{
-  color:#fff; 
- }
- .navbar__item:hover{
-  color:#0BA5EC; 
- }
- .pagination-nav {
-  display: none;
-  }
-.theme-doc-version-banner {
-display: none;
 }
-.theme-doc-version-badge{
+
+.navbar__item {
+  color: #fff;
+}
+
+.navbar__item:hover {
+  color: #0BA5EC;
+}
+
+/* .pagination-nav {
   display: none;
-  }
+  } */
+.theme-doc-version-banner {
+  display: none;
+}
+
+.theme-doc-version-badge {
+  display: none;
+}
+
+.Create-Product .tabs__item {
+  white-space: nowrap;
+  font-size: 11.9px;
+  max-width: 100%;
+}

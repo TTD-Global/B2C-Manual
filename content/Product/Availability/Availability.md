@@ -1,6 +1,8 @@
 ---
 title: Availability
 hide_table_of_contents: true
+pagination_next: null
+pagination_prev: null
 ---
 
 import DocCardList from '@theme/DocCardList';
