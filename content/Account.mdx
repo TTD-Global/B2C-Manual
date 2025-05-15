@@ -3,83 +3,58 @@ title: Account Management
 pagination_next: null
 pagination_prev: null
 ---
+
 import TOCInline from '@theme/TOCInline';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-## **Account management** 
-ไว้ใช้การจัดการบัญชี โดยมีการจัดการสองอย่าง ดังนี้
-- *Accounts* ไว้ใช้จัดการบัญชีของผู้ใช้
-- *Role Setting* จัดการบทบาทของผู้ใช้ในระบบ
 
----
-<Tabs className="unique-tabs">
+<Tabs>
+<TabItem value="accounts" label="Accounts" default>
 
-<TabItem value="Accounts">
+- **Accounts** - หน้าสำหรับจัดการบัญชีผู้ใช้
+    - **Add a new account profile** - ปุ่มสำหรับสร้างบัญชีผู้ใช้ใหม่
+    - **Table** - ตารางแสดงข้อมูลบัญชีผู้ใช้ทั้งหมด
+    - **Action** - ปุ่มสำหรับจัดการบัญชี (ดูรายละเอียด, แก้ไข, ลบ)
 
-## **Accounts** 
-มีข้อมูลสำคัญดังนี้
-- **Create a new account profile** ไว้ใช้สร้างบัญชีผู้ใช้
-- **Table** แสดงข้อมูลบัญชีที่ทำการสร้างหรือแก้ไขไว้ล่าสุด
-- **Action** เพื่อใช้ในการจัดการบัญชี
+![](/img/Account_management_accounts.png)
 
----
-## **Create a new account profile**
-โดยข้อมูลที่จำเป็นต้องกรอกมีอยู่ 2 อย่างคือ
-- **Email** โดยกำหนดเป็น Format : exam@simple.com
-- **Role** โดยสามารถเลือกตำแหน่งอ้างอิงจากที่สร้างไว้ใน _Role Setting_
-นอกเหนือจากนี้จะเป็นข้อมูลที่กรอกหรือไม่กรอกก็ได้
-- **First name** ชื่อ
-- **Last name** นามสกุล
-- **Position** ตำแหน่ง
-- **Phone number** เบอร์โทรศัพท์
-หลังจากกรอกข้อมูลที่จำเป็นเรียบร้อยแล้วให้กด _Save_ เพื่อบันทึกข้อมูล
-
----
-## **Table**
-แสดงข้อมูลที่สร้างหรือแก้ไขไว้ดังนี้
- - **Account holder** แสดง First name / Last name
- - **Email** แสดง Email
- - **Position** แสดง Position
- - **Role** แสดง Role
-
----
-## **Action**
-ไว้ใช้ในการจัดการบัญชีผู้ใช้
-- **View** ไว้ใช้สำหรับตรวจสอบข้อมูล
-- **Edit** ไว้ใช้สำหรับแก้ไขข้อมูลต่างๆ
-- **Delete** ไว้ใช้สำหรับลบบัญชีที่ไม่ต้องการ
-
----
 </TabItem>
+<TabItem value="create-account" label="Add a new account profile">
 
-<TabItem value="Role Settings">
+- **Add a new account profile** - ฟอร์มสำหรับเพิ่มบัญชีผู้ใช้ใหม่
+    - **Email** - อีเมล (จำเป็นต้องกรอก)
+    - **Role** - บทบาท (จำเป็นต้องเลือก)
+    - **First name** - ชื่อ (ไม่บังคับ)
+    - **Last name** - นามสกุล (ไม่บังคับ)
+    - **Position** - ตำแหน่ง (ไม่บังคับ)
+    - **Phone number** - เบอร์โทรศัพท์ (ไม่บังคับ)
+    - **Save** - ปุ่มบันทึกข้อมูล
+    - **Cancel** - ปุ่มยกเลิก
 
-## **Role Settings**
-มีข้อมูลสำคัญดังนี้
-- **Add a new role** ไว้ใช้สร้างบทบาทและกำหนดสิทธิในการเข้าถึง
-- **Table** แสดงชื่อบทบาทที่มีการสร้างหรือแก้ไข
-- **Action** ไว้ใช้จัดการบทบาทที่มีการสร้างขึ้น
+![](/img/Account_management_add_account.png)
 
----
-## **Add a new role**
-สิ่งที่จำเป็นต้องกรอกคือ 
-- **Role name** ชื่อของบทบาท
-นอกนั้นจะเป็นสิทธิในการเข้าถึงต่างๆ สามารถเลือกหรือไม่เลือกได้เช่นกัน
-- **Fucntion** สิทธิการเข้าถึง
+</TabItem>
+<TabItem value="role-setting" label="Role setting">
 
----
-## **Table**
-แสดงข้อมูลที่สร้างหรือแก้ไขไว้ดังนี้
-- **Role** แสดงชื่อบทบาทที่มีการสร้างหรือแก้ไขไว้
+- **Role setting** - หน้าสำหรับจัดการบทบาทผู้ใช้
+    - **Add a new role** - ปุ่มสำหรับสร้างบทบาทใหม่
+    - **Table** - ตารางแสดงชื่อบทบาททั้งหมด
+    - **Action** - ปุ่มสำหรับจัดการบทบาท (ดูรายละเอียด, แก้ไข, ลบ)
 
----
-## **Action**
-ไว้ใช้ในการจัดการบทบาท
-- **View** ไว้ใช้ในการตรวจสอบบทบาทที่มีการสร้างหรือแก้ไขล่าสุด
-- **Edit** ไว้ใช้ในการแก้ไขชื่อ หรือ สิทธิในการเข้าถึงของบทบาทนั้นๆ
-- **Delete** ไว้ใช้ในการลบบทบาทที่ไม่ต้องการออก
+![](/img/Account_management_role_setting.png)
 
+</TabItem>
+<TabItem value="add-role" label="Add a new role">
+
+- **Add a new role** - ฟอร์มสำหรับเพิ่มบทบาทใหม่
+    - **Role Name** - ชื่อบทบาท (จำเป็นต้องกรอก)
+    - **Function** - กำหนดสิทธิ์การเข้าถึง (View, Create, Edit, Delete) ในแต่ละเมนู
+    - **Select all** - เลือกสิทธิ์ทั้งหมดในแต่ละฟังก์ชัน
+    - **Save** - ปุ่มบันทึกข้อมูล
+    - **Cancel** - ปุ่มยกเลิก
+
+![](/img/Account_management_add_role.png)
 
 </TabItem>
 </Tabs>

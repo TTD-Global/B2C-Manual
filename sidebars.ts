@@ -109,7 +109,8 @@ const sidebars: SidebarsConfig = {
       type: 'html',
       value: '<hr style="border-color: black; margin: 8px 0;">',
     },
-    'Account'
+    'Account',
+    'CompanyProfile'
   ],
 };
 
