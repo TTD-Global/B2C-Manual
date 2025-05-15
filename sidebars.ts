@@ -69,9 +69,7 @@ const sidebars: SidebarsConfig = {
           }
           ,
           items: [
-            'Product/ManageDiscount/Creatediscount',
-            'Product/ManageDiscount/Filter',
-            'Product/ManageDiscount/Action',
+            'Product/ManageDiscount/Creatediscount'
           ],
 
         },
@@ -100,12 +98,12 @@ const sidebars: SidebarsConfig = {
       ]
     }
     ,
-    // {
-    //   type: 'category',
-    //   label: 'Performance',
-    //   items: ['Performance/Reviews', 'Performance/Analytics'],
-    // }
-    // ,
+    {
+      type: 'category',
+      label: 'Performance',
+      items: ['Performance/Reviews'],
+    }
+    ,
     // 'Finance',
     { // ขีดเส้นใต้
       type: 'html',

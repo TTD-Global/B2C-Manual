@@ -27,20 +27,21 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="Search Discount" label="Search Discount" default>
 
-- **Search Discount** - ไว้ใช้ในการค้นหาชื่อ Discount
+- **Search Product** - ค้นหาชื่อ Product ที่มีใน Discount
+- **Search Options** - ค้นหาชื่อ Options ที่มีใน Discount 
 
-    {/* ![](/img/Search_discount.png) */}
+    ![](/img/Search_discount.png)
 
 </TabItem>
 <TabItem value="Filter by status" label="Filter by status">
 
 **Filter by status** มี Status ดังนี้
-    - ***All discount*** แสดง Discount ทั้งหมด
-    - ***Active*** แสดง Discount ที่กำลังใช้งาน
-    - ***Paused*** แสดง Discount ที่หยุดใช้งาน
-    - ***Expired*** แสดง Discount ที่หมดอายุ
+    - ***All discount*** - แสดง Discount ทั้งหมด
+    - ***Active*** - แสดง Discount ที่กำลังใช้งาน
+    - ***Paused*** - แสดง Discount ที่หยุดใช้งาน
+    - ***Expired*** - แสดง Discount ที่หมดอายุ
 
-    {/* ![](/img/Discount-status.png) */}
+    ![](/img/Discount-status.png)
 
 </TabItem>
 </Tabs>
@@ -54,35 +55,58 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="Manage Discount" label="Manage Discount" default>
 
-- ***Pause - Reactivate*** หยุด/เปิดใช้งาน Discount
-- ***Delete Discount*** ลบ Discount
-- ***View usage*** ดูการใช้งาน Discount
-- ***View on website*** แสดงหน้า Discount บน Website
+- ***Pause - Reactivate*** - หยุด/เปิดใช้งาน Discount
+- ***Delete Discount*** - ลบ Discount
 
-{/* ![](/img/Manage_discount.png) */}
+![](/img/Manage_discount.png)
 
 </TabItem>
 <TabItem value="Discount" label="Discount">
 
-- ***Status*** จะแสดงสถานะ 3 สถานะ ดังนี้
-    - **Active** กำลังใช้งาน
-    - **Paused** หยุดใช้งาน
-    - **Expired** หมดอายุ
-- ***Action*** สามารถแก้ไข Discount หรือดูรายละเอียด Discount ได้
+- ***Status*** - จะแสดงสถานะ 3 สถานะ ดังนี้
+    - **Active** - กำลังใช้งาน
+    - **Paused** - หยุดใช้งาน
+    - **Expired** - หมดอายุ
+- ***Action*** - สามารถแก้ไข Discount หรือดูรายละเอียด Discount ได้
+- ***รายละเอียด Discount*** - แสดงข้อมูลสำคัญของ Discount ดังนี้
+    - **Name** - ชื่อของ Discount
+    - **Code** - รหัสสำหรับใช้รับส่วนลด (สามารถกดเพื่อคัดลอกได้)
+    - **Applies to** - ระบุว่าสามารถใช้กับสินค้าใดได้บ้าง
+    - **Claiming Period** - ช่วงเวลาที่สามารถใช้ Discount ได้
+    - **Usage Quantity** - จำนวนครั้งที่สามารถใช้ Discount ได้ (No limit หมายถึงไม่จำกัดจำนวนครั้ง)
+    - **Usage** - จำนวนครั้งที่มีการใช้ Discount นี้ไปแล้ว
+    - **Discount Amount** - แสดงจำนวนเงินหรือเปอร์เซ็นต์ส่วนลด
 
-{/* ![](/img/Discount-status.png) */}
+![](/img/Discount-status.png)
 
 </TabItem>
-<TabItem value="Usage" label="Usage">
+<TabItem value="Purchase Orders" label="Purchase Order">
 
-- ***View usage*** ดูรายละเอียดการใช้ Discount
-- ***User*** แสดงชื่อผู้ใช้ Discount
-- ***Booking*** แสดงข้อมูลการใช้ Discount ในแต่ละ Booking
+- ***รายละเอียดตาราง Purchase Orders***
+    - **Booking date** - วันที่ทำการจอง
+    - **Booking ID** - หมายเลขการจอง สามารถคลิกเพื่อดูรายละเอียดการจองได้
+    - **Product** - ชื่อ Product และ ชื่อ Options
+    - **Detail** - รายละเอียดเพิ่มเติม เช่น จำนวนผู้เดินทาง ราคาหลังหักส่วนลด และราคาก่อนหักส่วนลด
+    - **User** - อีเมลหรือชื่อผู้ใช้งานที่ทำการจองและใช้ Discount
 
-{/* ![](/img/Purchase_Order.png) */}
+![](/img/Purchase_Order.png)
 
 </TabItem>
 </Tabs>
+</TabItem>
+<TabItem value="active-reactive" label="Pause-Reactive">
+
+- **Pause-Reactive** - ใช้สำหรับเปิดใช้งาน - หยุดการใช้งานชั่วคราว
+
+![](/img/Discount_Active-reac.png)
+
+</TabItem>
+<TabItem value="Deleted" label="Delete">
+
+- **Delete** - ลบ Discount
+
+![](/img/Discount_Delete.png)
+
 </TabItem>
 </Tabs>
 
