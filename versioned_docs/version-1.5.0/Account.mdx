@@ -1,0 +1,60 @@
+---
+title: Account Management
+pagination_next: null
+pagination_prev: null
+---
+
+import TOCInline from '@theme/TOCInline';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+<Tabs>
+<TabItem value="accounts" label="Accounts" default>
+
+- **Accounts** - หน้าสำหรับจัดการบัญชีผู้ใช้
+    - **Add a new account profile** - ปุ่มสำหรับสร้างบัญชีผู้ใช้ใหม่
+    - **Table** - ตารางแสดงข้อมูลบัญชีผู้ใช้ทั้งหมด
+    - **Action** - ปุ่มสำหรับจัดการบัญชี (ดูรายละเอียด, แก้ไข, ลบ)
+
+![](/img/Account_management_accounts.png)
+
+</TabItem>
+<TabItem value="create-account" label="Add a new account profile">
+
+- **Add a new account profile** - ฟอร์มสำหรับเพิ่มบัญชีผู้ใช้ใหม่
+    - **Email** - อีเมล (จำเป็นต้องกรอก)
+    - **Role** - บทบาท (จำเป็นต้องเลือก)
+    - **First name** - ชื่อ (ไม่บังคับ)
+    - **Last name** - นามสกุล (ไม่บังคับ)
+    - **Position** - ตำแหน่ง (ไม่บังคับ)
+    - **Phone number** - เบอร์โทรศัพท์ (ไม่บังคับ)
+    - **Save** - ปุ่มบันทึกข้อมูล
+    - **Cancel** - ปุ่มยกเลิก
+
+![](/img/Account_management_add_account.png)
+
+</TabItem>
+<TabItem value="role-setting" label="Role setting">
+
+- **Role setting** - หน้าสำหรับจัดการบทบาทผู้ใช้
+    - **Add a new role** - ปุ่มสำหรับสร้างบทบาทใหม่
+    - **Table** - ตารางแสดงชื่อบทบาททั้งหมด
+    - **Action** - ปุ่มสำหรับจัดการบทบาท (ดูรายละเอียด, แก้ไข, ลบ)
+
+![](/img/Account_management_role_setting.png)
+
+</TabItem>
+<TabItem value="add-role" label="Add a new role">
+
+- **Add a new role** - ฟอร์มสำหรับเพิ่มบทบาทใหม่
+    - **Role Name** - ชื่อบทบาท (จำเป็นต้องกรอก)
+    - **Function** - กำหนดสิทธิ์การเข้าถึง (View, Create, Edit, Delete) ในแต่ละเมนู
+    - **Select all** - เลือกสิทธิ์ทั้งหมดในแต่ละฟังก์ชัน
+    - **Save** - ปุ่มบันทึกข้อมูล
+    - **Cancel** - ปุ่มยกเลิก
+
+![](/img/Account_management_add_role.png)
+
+</TabItem>
+</Tabs>

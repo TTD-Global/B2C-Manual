@@ -1,0 +1,115 @@
+---
+title: Create new Product
+hide_table_of_contents: true
+pagination_next: "Product/Product/Option"
+pagination_prev: "Product/Product/Product_list"
+---
+
+import TOCInline from '@theme/TOCInline';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+การสร้าง Product มีขั้นตอน 8 ขั้นตอนดังนี้
+
+<Tabs className="Create-Product">
+<TabItem value="Product category" label="1. Product category" default>
+
+**Product category** - ไว้กำหนด Categorise จัดหมวดหมู่ของ Product (แสดงหน้า Home) โดยแต่ละหัวข้อจะแสดง Dropdown เพื่อกำหนดหรือระบุ Categorise
+
+![](/img/Product-create-category.png)
+
+</TabItem>
+
+<TabItem value="Title" label="2. Title">
+
+- ***Title*** กำหนดชื่อของ Product เพื่อใช้ในการแสดงหน้า Website
+- ***Reference code*** - กำหนดข้อความสั้นๆไว้เพื่อใช้ในการอธิบาย Product แบบง่าย
+
+![](/img/Product-create-title.png)
+
+</TabItem>
+<TabItem value="Descriptions & highlight" label="3. Descriptions & highlight">
+
+- ***Descriptions & highlight*** แสดงข้อมูลเกี่ยวกับ Product 
+    - ***Introduce your product*** ไว้ใช้กระตุ้นความสนใจ และทำให้ผู้ใช้อยากเลื่อนอ่านหรือสำรวจต่อ
+    - ***Add a full description*** คำอธิบายของกิจกรรมแบบละเอียด เพื่อให้ลูกค้าเห็นภาพตั้งแต่ต้นจนจบ
+    - ***Summarize the highlights*** รบ่งบอกจุดเด่นของ Product ว่ามีอะไรบ้าง โดยกำหนดขั้นต่ำ 3 อย่าง 
+
+![](/img/Product-create-descrip.png)
+
+    *P.S. สามารถกด Preview เพื่อตรวจสอบข้อมูลที่กรอก ว่าจะแสดงที่หน้า Website อย่างไร*
+
+</TabItem>
+<TabItem value="Locations" label="4. Locations">
+
+**Locations** กำหนดจังหวัดและสถานที่ของ Product
+    - ***Country*** กำหนดจังหวัดของ Product
+    - ***Destination*** กำหนดสถานที่ของ Product *(โดยจะแสดงที่ Destination page )*
+
+![](/img/Product-create-location.png)
+
+    *P.S. สามารถกด Preview เพื่อตรวจสอบข้อมูลที่กรอก ว่าจะแสดงที่หน้า Website อย่างไร*
+
+
+</TabItem>
+<TabItem value="Keywords" label="5. Keywords">
+
+**Keywords** กำหนดคำที่มีความหมายสื่อถึง Product เพื่อค้นหาได้ง่ายขึ้น *(ระบุหรือไม่ระบุก็ได้)*
+
+    - ***Add keywords*** ระบุ Keywords ที่สื่อถึง Product โดยกำหนดได้สูงสุด 15 คำ
+
+![](/img/Product-create-keywords.png)
+
+    - ***Advanced keyword*** จะแสดงหมวดหมู่และลิสต์ของ Keyword ทั้งหมด สามารถระบุได้สูงสุด 15 คำ
+
+![](/img/Product-create-advance-keywords.png)
+
+    *P.S. สามารถกด Preview เพื่อตรวจสอบข้อมูลที่กรอก ว่าจะแสดงที่หน้า Website อย่างไร*
+
+
+</TabItem>
+<TabItem value="Guide information" label="6. Guide information">
+
+- **Guide information** กำหนดข้อมูลเกี่ยวกับลักษณะของ Product ว่าเกี่ยวกับอะไร โดยสามารถเลือกได้ 1 อย่าง เช่น Product เกี่ยวกับท่องเที่ยว จะเลือก Tour Guide เพื่อบอกว่า Product นี้จะมีผู้นำทางที่พร้อมอธิบายข้อมูลเกี่ยวกับสถานที่นั้นๆ เป็นต้น
+
+![](/img/Product-create-guide.png)
+
+    *P.S. สามารถกด Preview เพื่อตรวจสอบข้อมูลที่กรอก ว่าจะแสดงที่หน้า Website อย่างไร*
+
+
+</TabItem>
+<TabItem value="Extra information" label="7. Extra information">
+
+**Extra information** กำหนดข้อมูลเพิ่มเติมเกี่ยวกับ Product (กรอกหรือไม่กรอกก็ได้)
+    - ***Not suitable for*** ไว้ระบุว่า Product นี้ไม่เหมาะสมกับใคร เช่น เด็กอายุต่ำกว่า 18 ปี เป็นต้น
+    - ***Not allow for*** ระบุว่า Product นี้ไม่อนุญาตนำอะไรไป เช่น ของมีคม เครื่องดื่มแอลกอฮอล์ เป็นต้น
+    - ***What to bring*** ระบุว่า Product นี้ควรนำสิ่งของใดไปบ้าง เช่น แว่นกันแดด กล้อง เป็นต้น
+    - ***Know before booking*** ระบุว่าสิ่งที่ควรรู้ของ Product นี้ก่อนทำการจอง
+    - ***Emergency call*** ระบุเบอร์โทรศัพท์ติดต่อฉุกเฉิน
+    - ***Know before activity*** ระบุเพื่อบ่งบอกก่อนที่จะเริ่ม Product (ข้อความจะส่งให้ใน Email หลังจากทำการจองเรียบร้อย)
+
+    ![](/img/Product-create-extra.png)
+
+        *P.S. สามารถกด Preview เพื่อตรวจสอบข้อมูลที่กรอก ว่าจะแสดงที่หน้า Website อย่างไร*
+
+
+</TabItem>
+<TabItem value="Photo" label="8. Photo">
+
+**Photo** กำหนดรูปภาพที่จะแสดงในหน้า Website โดยรูปแรกจะเป็นรูปที่แสดงใหญ่สุดและเป็นรูปแสดงใน Card 
+    - ***ข้อกำหนด***
+        - ขั้นต่ำจะต้องมีขนาด 1280 px wide และไฟล์ที่รองรับมี JPG, JPEG, PNG ขนาดไฟล์ไม่เกิน 7 MB 
+        - ห้ามใช้รูปภาพที่มีลายน้ำ โลโก้ หรือป้ายทะเบียนที่สามารถอ่านได้ ห้ามใช้ภาพหน้าจอหรือรูปภาพของแผนที่พิมพ์หรือเส้นทางรถบัสที่มีตราสินค้า ห้ามใช้รูปภาพแนวตั้ง เซลฟี่ หรือรูปภาพขาวดำ
+    - ***ข้อตกลง***
+    จะต้องยอมรับข้อตกลง "ฉันเป็นเจ้าของลิขสิทธิ์ของรูปภาพเหล่านี้ และมีแบบฟอร์มอนุญาตสำหรับใบหน้าที่สามารถระบุได้ ฉันเข้าใจว่าฉันจะต้องรับผิดชอบหากมีการละเมิดลิขสิทธิ์"
+    - ***คำแนะนำ***
+    เลือกรูปภาพที่สว่าง สีสันสดใส และมีจุดเด่นที่บอกเล่าเรื่องราว คุณต้องการอย่างน้อย 3 รูปภาพ แต่ควรมี 7-10 รูปภาพ
+    _(ในการอัปโหลดรูปภาพ คุณต้องติ๊กยอมรับว่าคุณเป็นเจ้าของลิขสิทธิ์และมีแบบฟอร์มอนุญาตสำหรับบุคคลในรูปภาพที่สามารถระบุได้ก่อนที่จะดำเนินการต่อ)_
+
+    ![](/img/Product-create-photo.png)
+
+        *P.S. สามารถกด Preview เพื่อตรวจสอบข้อมูลที่กรอก ว่าจะแสดงที่หน้า Website อย่างไร*
+
+
+</TabItem>
+</Tabs>

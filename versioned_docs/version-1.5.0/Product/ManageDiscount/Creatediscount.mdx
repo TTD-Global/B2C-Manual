@@ -1,0 +1,68 @@
+---
+title: Create Discount
+hide_table_of_contents: true
+pagination_next: null
+pagination_prev: null
+---
+
+import DocCardList from '@theme/DocCardList';
+import TOCInline from '@theme/TOCInline';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<TabItem value="Action">
+
+การสร้าง Discounts มีทั้งหมด 2 ขั้นตอนด้วยกัน
+
+
+<Tabs>
+<TabItem value="Basicinfo" label="Basic infomation" default>
+
+**Basic infomation** เป็นข้อมูลจำเป็นต้องกรอก โดยมีข้อมูลดังนี้
+
+![](/img/Create_discount_Basic_info.png)
+
+- ***Discount name*** กำหนดชื่อไว้ใช้บ่งบอกส่วนลดนี้ จะไม่แสดงที่หน้า Website แสดงที่ Admin เท่านั้น
+- ***Prefix code*** กำหนดตัวอักษรภาษาอังกฤษเท่านั้น 3 ตัวอักษร 
+- ***Discount Type*** โดยจะแบ่งออกเป็น 2 ประเภทของส่วนลด คือ ส่วนลดแบบ Fix กับส่วนลดแบบ Percent
+    - ***Fix*** เป็นการกำหนดราคาที่ตายตัวว่าต้องการลดกี่บาท
+        - ***Discount Amount*** กำหนดราคาที่ต้องการลด
+
+                ![](/img/Fix_price.png)
+    
+    - ***Percent*** จะกำหนดเปอร์เซนต์ในการลดและสามารถตั้งค่าได้ว่าจะลดสูงสุดกี่บาท
+        - ***Discount Amount*** กำหนดจำนวนเปอร์เซนต์ที่ต้องการลด
+        - ***Maximum Discount Price*** กำหนดจำนวนเงินที่จะลดสูงสุดให้ได้ เช่น หาก Set Amount ที่ 200 บาท ลูกค้าจะได้รับส่วนลดสูงสุดได้ไม่เกิน 200 บาท หากตั้งเป็น No limit จะไม่กำหนดราคาที่จะลด เป็นต้น
+
+                ![](/img/Percent_price.png)
+
+- ***Minimum Basket Price*** กำหนดราคาขั้นต่ำที่ลูกค้าจะต้องซื้อเพื่อใช้งานโค้ดส่วนลด
+- ***Usage Quantity*** ไว้ใช้กำหนดจำนวนผู้ใช้งานโค้ดส่วนลด / No limit เพื่อใช้งานได้ไม่จำกัด
+- ***Maximum number of codes per buyer*** กำหนดจำนวนผู้ซื้อสามารถใช้โค้ดนี้ได้สูงสุด กี่ครั้ง
+- ***Code usage period*** กำหนดวันที่สามารถใช้งานโค้ดได้
+- ***Discount code*** จะเป็นการ Generate code ออกมา โดยนำ Prefix + Discount Amount + สุ่มตัวอักษร 3 หลัก 
+
+ป.ล. หากมีการแก้ไขข้อมูลจะต้องกด Get Code ที่ Discount code ใหม่อีกครั้งเพื่อ Generate Code ใหม่แล้วถึงจะ Conticnue ได้
+
+</TabItem>
+
+<TabItem value="Setup" label="Setup Products & Options">
+
+**Setup Products & Options** เป็นการกำหนดว่าจะสามารถใช้โค้ดนี้กับ Product / Options ไหนได้บ้าง
+
+- ***All products & options*** หมายถึง ทุก Product และ Options สามารถใช้งานโค้ดส่วนลดนี้ได้
+
+    ![](/img/Setup_Product-options.png)
+
+- ***Selected products*** หมายถึง ระบุ Product และ Options ที่สามารถใช้งานโค้ดส่วนลดนี้ได้
+
+    ![](/img/Setup_Add_Product.png)
+
+</TabItem>
+</Tabs>
+
+</TabItem>
+
+
+
+
